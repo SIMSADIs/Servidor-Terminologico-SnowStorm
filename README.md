@@ -102,8 +102,12 @@ nano docker-compose.yml
 ```
 docker compose-up -d
 ```
+## Carga de Snomed Internacional
 
-## Carga de terminología 
+falta agregar :D
+
+
+## Carga de terminologías
 
 ## Requisitos
 
