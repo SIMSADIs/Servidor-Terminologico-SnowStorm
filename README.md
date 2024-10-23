@@ -109,7 +109,7 @@ falta agregar :D
 
 ## Carga de terminologías
 
-## Requisitos
+### Requisitos
 
 - Java instalado.
 - HAPI-FHIR Tool instalado.
