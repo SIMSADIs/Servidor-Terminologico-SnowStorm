@@ -72,7 +72,7 @@ Se necesitan instalar los recursos:
 - HAPI-FHIR Tool
   
 
-### Instalar Java
+#### Instalar Java
 1.- Primero se actualiza la lista de paquetes de software disponibles en los repositorios oficiales.
 ```
 sudo apt update
