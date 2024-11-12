@@ -1,5 +1,7 @@
-## Instalación de SnowStorm
-Para instalar SnowStorm se deben ejecutar los siguientes comandos.
+## Despliegue local de SnowStorm
+
+Para desplegar SnowStorm de manera local se deben ejecutar los siguientes comandos en la terminal del dispositivo.
+
 ```
 sudo su
 ```
