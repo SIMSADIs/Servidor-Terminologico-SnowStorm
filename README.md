@@ -3,18 +3,18 @@ Snowstorm es un servidor terminológico de código abierto desarrollado por la I
 
 El siguiente repositorio indica como desplegar SnowStorm de forma local, cargarle terminologías locales he internacionales e integrarlo con Bahmni para ser utilizado como un front para así mostrar usabilidades del servidor.
 
-## Implementación de SnowStorm
+## Despliegue y configuración de SnowStorm
 
-- [Instalación de SnowStorm](https://github.com/SIMSADIs/Terminology-Server-SnowStorm/blob/deploy-snowstorm/Despliegue%20SnowStorm.md)
+- *[Requisitos](#Pre-requisitos)
+- [Despliegue de SnowStorm](https://github.com/SIMSADIs/Terminology-Server-SnowStorm/blob/deploy-snowstorm/Despliegue%20SnowStorm.md)
 - [Carga de terminología](https://github.com/SIMSADIs/Terminology-Server-SnowStorm/blob/load-terminology/Carga%20de%20terminolog%C3%ADa.md)
 - [Integración con Bahmni](https://github.com/SIMSADIs/Terminology-Server-SnowStorm/blob/snowstorm-deployment/setup-bahmni.md)
 
 
 
-# Despliegue local de servidor 
-Para desplegar el servidor terminológico SnowStorm se utiliza la documentación entregada por Snomed-CT en https://github.com/IHTSDO/snowstorm?tab=readme-ov-file.
 
-## Requisitos
+
+##Pre-requisitos
 
 - Sistema operativo Linux
 - 8G de memoria RAM
