@@ -52,110 +52,12 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 ```
 
 ## Instalación de SnowStorm
-Para instalar SnowStorm se deben ejecutar los siguientes comandos.
-```
-sudo su
-```
 
-```
-cd ..
-```
-
-```
-systemctl status docker
-```
-```
-docker volume create portainer_data
-```
-```
-docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest
-```
-```
-sudo sysctl -w vm.max_map_count=262144
-```
-```
-curl -SL https://github.com/docker/compose/releases/download/v2.28.0/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
-```
-```
-sudo chmod +x /usr/local/bin/docker-compose
-```
-```
-docker-compose --version
-```
-```
-wget
-```
-```
-wget https://github.com/IHTSDO/snowstorm/archive/refs/tags/10.3.1.zip
-```
-```
-unzip 10.3.1.zip
-```
-
-```
-cd snowstorm-10.3.1/
-```
-
-```
-nano docker-compose.yml
-```
-```
-docker compose-up -d
-```
 ## Carga de Snomed Internacional
 
 falta agregar :D
 
 
 ## Carga de terminologías
-
-### Requisitos
-
-- Java instalado.
-- HAPI-FHIR Tool instalado.
-  
-
-### Instalar Java
-1.- Se instala Java
-```
-sudo apt install openjdk-17-jre-headless  # version 17.0.12+7-1ubuntu2~24.04
-```
-
-### Instalar HAPI-FHIR Tool
-
-Para instalar Hapi-Fhir Tool se utiliza la documentación entregada en https://hapifhir.io/hapi-fhir/docs/tools/hapi_fhir_cli.html.
-
-1.- Descargar el archivo comprimido llamado hapi-fhir-[versión]-cli.zip desde https://github.com/hapifhir/hapi-fhir/releases .
-
-2.- Descomprime el archivo descargado, utiliza la terminal, ubicate en el directorio donde se encuntra el archivo e ingresa el siguiente comando, recuerda cambiar la versión a la que estés ocupando.
-```
-unzip hapi-fhir-7.4.2-cli.zip
-```
-
-3.- Ejecuta el archivo hapi-fhir-cli.jar.
-```
-java hapi-fhir-cli.jar
-```
-
-4.- Inicia HAPI-FHIR Tool.
-```
- ./hapi-fhir-cli
-```
-
-### Carga de terminología
-
-#### Loinc
-```
- ./hapi-fhir-cli upload-terminology -d Loinc_2.74.zip -v r4 -t http://localhost:8080/fhir -u http://loinc.org -s 10GB
-```
-
-#### Cie-10
-```
- ./hapi-fhir-cli upload-terminology -d cie_10_deis.zip -v r4 -t http://localhost:8080/fhir -u http://hl7.org/fhir/sid/icd-10 -s 1GB
-```
-
-#### Norma 820
-
-
 
 
