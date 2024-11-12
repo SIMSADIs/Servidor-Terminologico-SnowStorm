@@ -72,7 +72,7 @@ Para revisar que se instaló correctamente y la versión que quedó en el entorn
 ```
 docker compose version
 ```
-<-- Aquí hay una línea en blanco -->
+<!-- Esta línea está vacía, agregando espacio entre el título y el siguiente bloque -->
 ### Requisitos para carga de terminología a SnowStorm
 
 
