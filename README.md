@@ -63,4 +63,41 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 ### Requisitos para carga de terminología a SnowStorm
 
 
+#### Pre-requisitos para subir terminologías al servidor
+
+Se necesitan instalar los recursos:
+- Java
+- HAPI-FHIR Tool
+  
+
+### Instalar Java
+1.- Primero se actualiza la lista de paquetes de software disponibles en los repositorios oficiales.
+```
+sudo apt update
+```
+2.- Luego, se instala Java Runtime.
+```
+sudo apt install openjdk-17-jre-headless  
+```
+
+### Instalar HAPI-FHIR Tool
+
+Para instalar Hapi-Fhir Tool se utiliza la documentación entregada en https://hapifhir.io/hapi-fhir/docs/tools/hapi_fhir_cli.html.
+
+1.- Descargar el archivo comprimido llamado hapi-fhir-[versión]-cli.zip desde https://github.com/hapifhir/hapi-fhir/releases .
+
+2.- Descomprime el archivo descargado, utiliza la terminal, ubicate en el directorio donde se encuntra el archivo e ingresa el siguiente comando, recuerda cambiar la versión a la que estés ocupando.
+```
+unzip hapi-fhir-7.4.2-cli.zip
+```
+
+3.- Ejecuta el archivo hapi-fhir-cli.jar.
+```
+java hapi-fhir-cli.jar
+```
+
+4.- Inicia HAPI-FHIR Tool.
+```
+ ./hapi-fhir-cli
+```
 
