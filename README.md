@@ -20,9 +20,9 @@ El siguiente repositorio indica como desplegar SnowStorm de forma local, cargarl
 - Disco SSD
 
 
-#### Instalación de Docker
+#### Docker y Docker-Compose
 
-Para instalar Docker en Linux se utilizan los siguientes comandos en orden, estos deben ser ingresados en la terminal.
+Instalación de Docker
 
 1.- Actualizar lista de paquetes disponibles en el sistema.
 ```
@@ -59,6 +59,23 @@ sudo apt-get update
 ```
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
+
+Instalación de docker-compose
+
+```
+sudo apt-get update
+```
+```
+sudo apt-get install docker-compose-plugin
+```
+# Para revisar que se instaló correctamente y la versión que quedó en el entorno se puede usar el comando:
+```
+docker compose version
+```
+
+
+
+
 
 
 
