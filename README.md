@@ -60,6 +60,8 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
+
+
 ### Requisitos para carga de terminología a SnowStorm
 
 
@@ -100,4 +102,6 @@ java hapi-fhir-cli.jar
 ```
  ./hapi-fhir-cli
 ```
+
+### Requisitos para desplegar Bahmni
 
