@@ -1,17 +1,26 @@
 # Servidor terminológico SnowStorm
-A continuación se muestra paso a paso cómo instalar el servidor terminológico open-source Snowstorm de Snomed-CT en un sistema operativo Linux.
+Snowstorm es un servidor terminológico de código abierto desarrollado por la IHTSDO (International Health Terminology Standards Development Organisation) para gestionar y consultar la terminología clínica SNOMED CT. Proporciona una API RESTful para facilitar la integración y el acceso a los datos terminológicos en aplicaciones de salud
 
-# Despliegue local de servidor 
-Para desplegar el servidor terminológico SnowStorm se utiliza la documentación entregada por Snomed-CT en https://github.com/IHTSDO/snowstorm?tab=readme-ov-file.
+El siguiente repositorio indica como desplegar SnowStorm de forma local, cargarle terminologías locales he internacionales e integrarlo con Bahmni para ser utilizado como un front para así mostrar usabilidades del servidor.
 
-## Requisitos
+## Despliegue y configuración de SnowStorm
 
+- [Despliegue de SnowStorm](https://github.com/SIMSADIs/Terminology-Server-SnowStorm/blob/deploy-snowstorm/deploy-snowstorm.md)
+- [Carga de terminología](https://github.com/SIMSADIs/Terminology-Server-SnowStorm/blob/load-terminology/load-terminology.md)
+- [Integración con Bahmni](https://github.com/SIMSADIs/Terminology-Server-SnowStorm/blob/snowstorm-deployment/setup-bahmni.md)
+
+
+## Pre-requisitos para desplegar y configurar SnowStorm
+
+### Requisitos para despliegue de SnowStorm
+
+#### Requisitos del sistema
 - Sistema operativo Linux
 - 8G de memoria RAM
 - Disco SSD
 
 
-### Instalación de Docker
+#### Instalación de Docker
 
 Para instalar Docker en Linux se utilizan los siguientes comandos en orden, estos deben ser ingresados en la terminal.
 
@@ -51,20 +60,24 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
+### Requisitos para carga de terminología a SnowStorm
 
 
-## Carga de terminologías
+#### Pre-requisitos para subir terminologías al servidor
 
-### Requisitos
-
-- Java instalado.
-- HAPI-FHIR Tool instalado.
+Se necesitan instalar los recursos:
+- Java
+- HAPI-FHIR Tool
   
 
 ### Instalar Java
-1.- Se instala Java
+1.- Primero se actualiza la lista de paquetes de software disponibles en los repositorios oficiales.
 ```
-sudo apt install openjdk-17-jre-headless  # version 17.0.12+7-1ubuntu2~24.04
+sudo apt update
+```
+2.- Luego, se instala Java Runtime.
+```
+sudo apt install openjdk-17-jre-headless  
 ```
 
 ### Instalar HAPI-FHIR Tool
@@ -87,21 +100,4 @@ java hapi-fhir-cli.jar
 ```
  ./hapi-fhir-cli
 ```
-
-### Carga de terminología
-
-#### Loinc
-```
- ./hapi-fhir-cli upload-terminology -d Loinc_2.74.zip -v r4 -t http://localhost:8080/fhir -u http://loinc.org -s 10GB
-```
-
-#### Cie-10
-```
- ./hapi-fhir-cli upload-terminology -d cie_10_deis.zip -v r4 -t http://localhost:8080/fhir -u http://hl7.org/fhir/sid/icd-10 -s 1GB
-```
-
-#### Norma 820
-
-
-
 
