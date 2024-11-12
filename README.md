@@ -82,7 +82,7 @@ sudo apt update
 sudo apt install openjdk-17-jre-headless  
 ```
 
-### Instalar HAPI-FHIR Tool
+#### Instalar HAPI-FHIR Tool
 
 Para instalar Hapi-Fhir Tool se utiliza la documentación entregada en https://hapifhir.io/hapi-fhir/docs/tools/hapi_fhir_cli.html.
 
