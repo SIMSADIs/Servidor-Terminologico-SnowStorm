@@ -6,7 +6,7 @@ El siguiente repositorio indica como desplegar SnowStorm de forma local, cargarl
 ## Despliegue y configuración de SnowStorm
 
 - [Despliegue de SnowStorm](https://github.com/SIMSADIs/Terminology-Server-SnowStorm/blob/deploy-snowstorm/deploy-snowstorm.md)
-- [Carga de terminología](https://github.com/SIMSADIs/Terminology-Server-SnowStorm/blob/load-terminology/Carga%20de%20terminolog%C3%ADa.md)
+- [Carga de terminología](https://github.com/SIMSADIs/Terminology-Server-SnowStorm/blob/load-terminology/load-terminology.md)
 - [Integración con Bahmni](https://github.com/SIMSADIs/Terminology-Server-SnowStorm/blob/snowstorm-deployment/setup-bahmni.md)
 
 
