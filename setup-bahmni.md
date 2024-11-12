@@ -1,4 +1,4 @@
-#Instalación de Bahmni e integración con SnowStorm
+# Instalación de Bahmni e integración con SnowStorm
 
 El primer paso que se debe hacer es preparar tu sistema para el despligue de Bahmni, esto se hace como indica la rama principal del repositorio Bahmni SIMSADI https://github.com/Mitridato/BAHMNI-SIMSADI/tree/main?tab=readme-ov-file.
 
