@@ -5,23 +5,22 @@ El siguiente repositorio indica como desplegar SnowStorm de forma local, cargarl
 
 ## Despliegue y configuración de SnowStorm
 
-- *[Requisitos](#Pre-requisitos)
 - [Despliegue de SnowStorm](https://github.com/SIMSADIs/Terminology-Server-SnowStorm/blob/deploy-snowstorm/Despliegue%20SnowStorm.md)
 - [Carga de terminología](https://github.com/SIMSADIs/Terminology-Server-SnowStorm/blob/load-terminology/Carga%20de%20terminolog%C3%ADa.md)
 - [Integración con Bahmni](https://github.com/SIMSADIs/Terminology-Server-SnowStorm/blob/snowstorm-deployment/setup-bahmni.md)
 
 
+## Pre-requisitos para desplegar y configurar SnowStorm
 
+### Requisitos para despliegue de SnowStorm
 
-
-##Pre-requisitos
-
+#### Requisitos del sistema
 - Sistema operativo Linux
 - 8G de memoria RAM
 - Disco SSD
 
 
-### Instalación de Docker
+#### Instalación de Docker
 
 Para instalar Docker en Linux se utilizan los siguientes comandos en orden, estos deben ser ingresados en la terminal.
 
@@ -61,6 +60,7 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
+### Requisitos para carga de terminología a SnowStorm
 
 
 
