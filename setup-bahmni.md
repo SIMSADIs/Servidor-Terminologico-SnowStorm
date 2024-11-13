@@ -40,8 +40,9 @@ docker compose up -d
 
 ./run-bahmni.sh .env.dev
 
-
 ```
+
+### Instegración de Bahmni con SnowStorm
 
 
 
