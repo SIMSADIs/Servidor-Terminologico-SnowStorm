@@ -23,13 +23,6 @@ git clone https://github.com/Bahmni/bahmni-docker.git
 
 cd bahmni-lite
 
-# Edita el archivo .env , y has los siguientes pasos 
-# 1. Change `COMPOSE_PROFILES=bahmni-lite` (or run with default which is `emr`)
-# 2. Change `TZ` to your desired timezone (or run with the default which is `UTC`). 
-# 3. For remote server (if not running on localhost) for crater:
-# write the IP address or domain name in the following properties (instead of localhost): 
-# CRATER_APP_URL, CRATER_SANCTUM_STATEFUL_DOMAINS and CRATER_SESSION_DOMAIN
-
 # Edita el archivo .env y sigue los siguientes pasos:
 # 1. Cambia `COMPOSE_PROFILES=bahmni-lite` (o usa el valor por defecto que es `emr`)
 # 2. Cambia `TZ` a tu zona horaria deseada (o usa el valor por defecto que es `UTC`).
@@ -50,10 +43,6 @@ docker compose up -d
 
 ```
 
-
-
-
-https://bahmni.atlassian.net/wiki/spaces/BAH/pages/3117744129/Getting+Started+Quickly+with+Bahmni+on+Docker#Running-Bahmni-Standard.
 
 
 
