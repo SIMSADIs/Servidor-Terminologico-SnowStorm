@@ -26,3 +26,53 @@ Para cargar las terminologías se hace a través de la API FHIR de SnowStorm, de
 ```
 
 ### Carga de Value Sets
+
+Para cargar un Value Set en SnowStorm se debe realizar en un consultador de API REST como Postman ya que puede almacenar y administrar especificaciones de API, se debe hacer un Post a la API del servidor 
+
+Dirección del servior
+
+```
+http://localhost:8080/ 
+```
+
+Ejemplo de Value-Set
+```
+{
+    "resourceType": "ValueSet",
+    "url": "http://minsal.cl/fhir/vs/sexo_biologico",
+    "version": "0.1",
+    "name": "Sexo Biologico",
+    "description": "Lista de los posibles sexos para captura de detalle de pacicentes.",
+    "status": "draft",
+    "experimental": true,
+    "language": "es",
+    "compose": {
+        "include": [
+            {
+                "system": "http://snomed.info/sct/449081005",
+                "concept": [
+                    {
+                        "code": "248153007"
+                    },
+                    {
+                        "code": "248152002"
+                    },
+                    {
+                        "code": "32570691000036108"
+                    },
+                    {
+                        "code": "407377005"
+                    },
+                    {
+                        "code": "407376001"
+                    }
+                ]
+            }
+        ]
+    }
+}
+```
+
+
+
+
