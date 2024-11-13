@@ -29,7 +29,7 @@ Para cargar las terminologías se hace a través de la API FHIR de SnowStorm, de
 
 Para cargar un Value Set en SnowStorm se debe realizar en un consultador de API REST como Postman ya que puede almacenar y administrar especificaciones de API, se debe hacer un Post a la API del servidor 
 
-Dirección del servior
+Dirección del servidor
 
 ```
 http://localhost:8080/ 
