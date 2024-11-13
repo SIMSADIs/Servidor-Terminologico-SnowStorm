@@ -15,7 +15,7 @@ En este proyecto se decidió utilizar Bahmni lite ya que para fines de testeo Un
 
 A continuación se muestran los comandos con los cuales se instala Bahmni, estos los podemos encontrar en https://bahmni.atlassian.net/wiki/spaces/BAH/pages/3117744129/Getting+Started+Quickly+with+Bahmni+on+Docker#Running-Bahmni-Standard
 
-Ubicate en un directorio a elección y has los siguientes comandos 
+Ubicate en un directorio a elección en la terminal y has los siguientes comandos 
 ```
 
 # Clona el repositorio de Bahmni docker
