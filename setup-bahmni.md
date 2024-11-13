@@ -6,7 +6,7 @@ Para crear la integración de SnowStorm con Bahmni se debe seguir lo comentado a
 
 ### Instalación de Bahmni
 
-Para instalar Bahmnni se siguió la documentación realizada por Nicolás Muñoz en su trabajó de título en el repositorio Bahmni SIMSADI https://github.com/Mitridato/BAHMNI-SIMSADI/tree/main?tab=readme-ov-file. En esta documentación se explica cómo instalar Bahmni y configurarlo para darle nuevas funcionalidades.
+Para instalar Bahmnni se siguió la documentación realizada por Nicolás Muñoz en su trabajó de título en el repositorio Bahmni SIMSADI https://github.com/Mitridato/BAHMNI-SIMSADI/tree/main?tab=readme-ov-file. En esta documentación se explica cómo instalar Bahmni y configurarlo para darle funcionalidades.
 
 Adicinal a la documentación mencionada también se revisó la documentación original en Bahmni Wiki https://bahmni.atlassian.net/wiki/spaces/BAH/overview?homepageId=491527
 
