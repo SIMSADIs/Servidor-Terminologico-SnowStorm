@@ -12,6 +12,8 @@ El siguiente repositorio indica como desplegar SnowStorm de forma local, cargarl
 
 ## Pre-requisitos para desplegar y configurar SnowStorm
 
+agregar git
+
 ### Requisitos para despliegue de SnowStorm
 
 #### Requisitos del sistema
