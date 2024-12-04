@@ -1,13 +1,10 @@
 ## Despliegue local de SnowStorm
 
-Para desplegar SnowStorm de manera local se deben ejecutar los siguientes comandos en la terminal del dispositivo.
+Para desplegar SnowStorm se deben ejecutar los siguientes comandos en la terminal del dispositivo.
+
 
 ```
-sudo su
-```
-
-```
-cd ..
+cd
 ```
 
 ```
@@ -30,9 +27,6 @@ sudo chmod +x /usr/local/bin/docker-compose
 ```
 ```
 docker-compose --version
-```
-```
-wget
 ```
 ```
 wget https://github.com/IHTSDO/snowstorm/archive/refs/tags/10.3.1.zip
