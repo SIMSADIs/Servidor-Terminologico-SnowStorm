@@ -1,7 +1,7 @@
 # Servidor terminológico SnowStorm
 Snowstorm es un servidor terminológico de código abierto desarrollado por la IHTSDO (International Health Terminology Standards Development Organisation) para gestionar y consultar la terminología clínica SNOMED CT. Proporciona una API RESTful para facilitar la integración y el acceso a los datos terminológicos en aplicaciones de salud
 
-El siguiente repositorio indica como desplegar SnowStorm de forma local, cargarle terminologías locales he internacionales e integrarlo con Bahmni para ser utilizado como un front para así mostrar usabilidades del servidor.
+El siguiente repositorio indica como desplegar SnowStorm de forma local, cargarle terminologías locales he internacionales y crear una integración interoperable con Bahmni para ser utilizado en un registro clínico electrónico y mostrar una de sus usabilidades.
 
 ## Despliegue y configuración de SnowStorm
 
@@ -14,6 +14,11 @@ El siguiente repositorio indica como desplegar SnowStorm de forma local, cargarl
 
 ### Requisitos del sistema
 
+- Sistema operativo Linux
+- 8G de memoria RAM
+- Disco SSD
+- 4 nucleos de cpu
+
 1.- Instalar Zip y Unzip.
 ```
 sudo apt install zip
@@ -23,12 +28,7 @@ sudo apt install zip
 apt-get install git
 ```
 
-- Sistema operativo Linux
-- 8G de memoria RAM
-- Disco SSD
-- 4 nucleos de cpu
-
-#### Instalación de Docker
+#### Docker
 
 1.- Actualizar lista de paquetes disponibles en el sistema.
 ```
