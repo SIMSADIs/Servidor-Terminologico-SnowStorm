@@ -19,15 +19,7 @@ docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /va
 ```
 sudo sysctl -w vm.max_map_count=262144
 ```
-```
-curl -SL https://github.com/docker/compose/releases/download/v2.28.0/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
-```
-```
-sudo chmod +x /usr/local/bin/docker-compose
-```
-```
-docker-compose --version
-```
+
 ```
 wget https://github.com/IHTSDO/snowstorm/archive/refs/tags/10.3.1.zip
 ```
@@ -62,6 +54,16 @@ quita portainer y carpeta
 docker stop portainer
 docker rm portainer
 rm -r snowstorm-10.3.1/
+```
+## Docker Compose
+```
+curl -SL https://github.com/docker/compose/releases/download/v2.28.0/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
+```
+```
+sudo chmod +x /usr/local/bin/docker-compose
+```
+```
+docker-compose --version
 ```
 
 
