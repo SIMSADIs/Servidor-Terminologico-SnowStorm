@@ -43,8 +43,27 @@ cd snowstorm-10.3.1/
 nano docker-compose.yml
 ```
 ```
-docker compose-up -d
+docker-compose up -d
 ```
 ## Carga de Snomed Internacional
 
 falta agregar :D
+
+## En caso de error como quitar los contenedores
+
+eliminar contenedores
+```
+docker-compose down --volumes --rmi all
+docker volume prune -f
+docker network prune -f
+```
+quita portainer y carpeta
+```
+docker stop portainer
+docker rm portainer
+rm -r snowstorm-10.3.1/
+```
+
+
+
+
