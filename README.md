@@ -10,7 +10,7 @@ Para desplegar el servidor, configurarlo, crear la integración interoperable co
 - [Integración con Bahmni](https://github.com/SIMSADIs/Terminology-Server-SnowStorm/blob/snowstorm-deployment/setup-bahmni.md)
 
 
-## Pre-requisitos para desplegar y configurar SnowStorm
+# Requisitos para desplegar y configurar SnowStorm
 
 ## Requisitos del sistema
 
