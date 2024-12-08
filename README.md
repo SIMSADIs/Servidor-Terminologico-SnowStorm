@@ -28,7 +28,7 @@ sudo apt install zip
 apt-get install git
 ```
 
-#### Docker
+### Docker
 
 1.- Actualizar lista de paquetes disponibles en el sistema.
 ```
@@ -66,7 +66,7 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
-#### Instalación de docker-compose
+### Docker-compose
 
 ```
 sudo apt-get update
@@ -80,16 +80,14 @@ docker compose version
 ```
 
 
-### Requisitos para carga de terminología a SnowStorm
-
-#### Pre-requisitos para subir terminologías al servidor
+## Requisitos para carga de terminología a SnowStorm
 
 Se necesitan instalar los recursos:
 - Java
 - HAPI-FHIR Tool
   
 
-#### Instalar Java
+### Instalar Java
 1.- Primero se actualiza la lista de paquetes de software disponibles en los repositorios oficiales.
 ```
 sudo apt update
@@ -99,7 +97,7 @@ sudo apt update
 sudo apt install openjdk-17-jre-headless  
 ```
 
-#### Instalar HAPI-FHIR Tool
+### Instalar HAPI-FHIR Tool
 
 Para instalar Hapi-Fhir Tool se utiliza la documentación entregada en https://hapifhir.io/hapi-fhir/docs/tools/hapi_fhir_cli.html.
 
@@ -120,5 +118,5 @@ java hapi-fhir-cli.jar
  ./hapi-fhir-cli
 ```
 
-### Requisitos para desplegar Bahmni
+## Requisitos para desplegar Bahmni
 
