@@ -12,25 +12,21 @@ El siguiente repositorio indica como desplegar SnowStorm de forma local, cargarl
 
 ## Pre-requisitos para desplegar y configurar SnowStorm
 
-1.- Instalar Zip y Unzip con el siguiente comando
+### Requisitos del sistema
+
+1.- Instalar Zip y Unzip.
 ```
 sudo apt install zip
 ```
-1.- Instalar git con el siguiente comando
+1.- Instalar Git.
 ```
 apt-get install git
 ```
 
-
-### Requisitos para despliegue de SnowStorm
-
-#### Requisitos del sistema
 - Sistema operativo Linux
 - 8G de memoria RAM
 - Disco SSD
-
-
-### Docker y Docker-Compose
+- 4 nucleos de cpu
 
 #### Instalación de Docker
 
@@ -82,11 +78,9 @@ Para revisar que se instaló correctamente y la versión que quedó en el entorn
 ```
 docker compose version
 ```
-<!--  -->
-<!--  -->
-<!--  -->
-### Requisitos para carga de terminología a SnowStorm
 
+
+### Requisitos para carga de terminología a SnowStorm
 
 #### Pre-requisitos para subir terminologías al servidor
 
