@@ -17,7 +17,7 @@ Para desplegar el servidor, configurarlo, crear la integración interoperable co
 - Sistema operativo Linux
 - 8G de memoria RAM
 - Disco SSD
-- 4 nucleos de cpu
+- CPU de 4 nucleos
 
 1.- Instalar Zip y Unzip.
 ```
