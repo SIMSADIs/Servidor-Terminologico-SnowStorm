@@ -12,7 +12,15 @@ El siguiente repositorio indica como desplegar SnowStorm de forma local, cargarl
 
 ## Pre-requisitos para desplegar y configurar SnowStorm
 
-agregar git
+1.- Instalar Zip y Unzip con el siguiente comando
+```
+sudo apt install zip
+```
+1.- Instalar git con el siguiente comando
+```
+apt-get install git
+```
+
 
 ### Requisitos para despliegue de SnowStorm
 
