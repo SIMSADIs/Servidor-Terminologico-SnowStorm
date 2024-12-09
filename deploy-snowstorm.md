@@ -39,7 +39,7 @@ docker-compose up -d
 ```
 ## Carga de Snomed Internacional
 
-![Obtener ID](URL-del-GIF)
+![Obtener ID](/deploy-snowstorm/1.gif)
 
 ## En caso de error como quitar los contenedores
 
