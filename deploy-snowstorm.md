@@ -39,7 +39,7 @@ docker-compose up -d
 ```
 ## Carga de Snomed Internacional
 
-falta agregar :D
+![Obtener ID](URL-del-GIF)
 
 ## En caso de error como quitar los contenedores
 
