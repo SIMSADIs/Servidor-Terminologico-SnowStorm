@@ -40,7 +40,7 @@ docker-compose up -d
 ## Carga de Snomed Internacional
 
 ![Obtener ID](https://github.com/SIMSADIs/Servidor-Terminologico-SnowStorm/blob/deploy-snowstorm/1.gif)
-<img src="https://github.com/SIMSADIs/Servidor-Terminologico-SnowStorm/blob/deploy-snowstorm/1.gif" alt="Obtener ID" width="300" height="300">
+<img src="https://github.com/SIMSADIs/Servidor-Terminologico-SnowStorm/blob/deploy-snowstorm/1.gif" alt="Obtener ID" width="500" height="300">
 
 ## En caso de error como quitar los contenedores
 
