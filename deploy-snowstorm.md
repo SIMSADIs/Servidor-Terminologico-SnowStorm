@@ -39,7 +39,7 @@ docker-compose up -d
 ```
 ## Carga de Snomed Internacional
 
-![Obtener ID](https://github.com/SIMSADIs/Servidor-Terminologico-SnowStorm/blob/deploy-snowstorm/1.gif)
+
 <img src="https://github.com/SIMSADIs/Servidor-Terminologico-SnowStorm/blob/deploy-snowstorm/1.gif" alt="Obtener ID" width="500" height="300">
 
 ## En caso de error como quitar los contenedores
@@ -55,16 +55,6 @@ quita portainer y carpeta
 docker stop portainer
 docker rm portainer
 rm -r snowstorm-10.3.1/
-```
-## Docker Compose
-```
-curl -SL https://github.com/docker/compose/releases/download/v2.28.0/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
-```
-```
-sudo chmod +x /usr/local/bin/docker-compose
-```
-```
-docker-compose --version
 ```
 
 
