@@ -1,39 +1,52 @@
-## Despliegue local de SnowStorm
+## Despliegue de SnowStorm
 
 Para desplegar SnowStorm se deben ejecutar los siguientes comandos en la terminal del dispositivo.
 
-
+1.-
 ```
 cd
 ```
 
+2.-
 ```
 systemctl status docker
 ```
+
+3.-
 ```
 docker volume create portainer_data
 ```
+
+4.-
 ```
 docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest
 ```
+
+5.-
 ```
 sudo sysctl -w vm.max_map_count=262144
 ```
 
+6.-
 ```
 wget https://github.com/IHTSDO/snowstorm/archive/refs/tags/10.3.1.zip
 ```
+
+7.-
 ```
 unzip 10.3.1.zip
 ```
 
+8.-
 ```
 cd snowstorm-10.3.1/
 ```
 
+9.-
 ```
 nano docker-compose.yml
 ```
+10.-
 ```
 docker-compose up -d
 ```
