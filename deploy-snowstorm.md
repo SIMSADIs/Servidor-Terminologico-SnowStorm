@@ -1,6 +1,6 @@
 ## Despliegue de SnowStorm
 
-Para desplegar SnowStorm se deben ejecutar los siguientes comandos en la terminal del dispositivo.
+Para desplegar SnowStorm se deben ejecutar los siguientes comandos en la terminal del dispositivo después de haber instalado los requerimientos que se muentran en la rama principal  de este repositorio. Adicional a eso debes estar en modo root en la terminal.
 
 1.-
 ```
