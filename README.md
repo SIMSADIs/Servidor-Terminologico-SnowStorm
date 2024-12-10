@@ -8,6 +8,7 @@ Para desplegar el servidor, configurarlo, crear la integración interoperable co
 - [Despliegue de SnowStorm](https://github.com/SIMSADIs/Terminology-Server-SnowStorm/blob/deploy-snowstorm/deploy-snowstorm.md)
 - [Carga de terminología](https://github.com/SIMSADIs/Terminology-Server-SnowStorm/blob/load-terminology/load-terminology.md)
 - [Integración con Bahmni](https://github.com/SIMSADIs/Terminology-Server-SnowStorm/blob/snowstorm-deployment/setup-bahmni.md)
+- [Configuración de la nube](https://github.com/SIMSADIs/Servidor-Terminologico-SnowStorm/tree/setting-cloud)
 
 
 # Requisitos para desplegar y configurar SnowStorm
