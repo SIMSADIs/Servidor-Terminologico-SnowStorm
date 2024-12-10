@@ -40,13 +40,20 @@ docker-compose up -d
 ## Carga de Snomed Internacional
 Para cargar SNOMED-CT en inglés y en distintos idiomas se debe hacer desde la url https://[IP]:8080/ la cual lleva a Swagger UI, a continuación se muestra  el paso a paso.
 
-1.- Desde Swagger UI se debe ir a la sección Imports, POST/imports y en body request se debe pegar la definición entregada en este [link](https://github.com/IHTSDO/snowstorm/blob/master/docs/loading-snomed.md) 
+1.- Desde Swagger UI se debe ir a la sección Imports, POST/imports y en body request se debe pegar la definición entregada en este [link](https://github.com/IHTSDO/snowstorm/blob/master/docs/loading-snomed.md) , al hacer click en Execute se entregará un ID.
 
 <img src="https://github.com/SIMSADIs/Servidor-Terminologico-SnowStorm/blob/deploy-snowstorm/1.gif" alt="Obtener ID" width="500" height="300">
 
+
+2.- El ID entregado debe pegarse en la sección GET/import/{importId} y dar click en Execute.
+
 <img src="https://github.com/SIMSADIs/Servidor-Terminologico-SnowStorm/blob/deploy-snowstorm/2.gif" alt="Pegar ID" width="500" height="300">
 
+3.- También se debe pegar el ID en la sección POST/imports/{importId}/archive, y adicionalmente se debe seleccionar el archivo  que contiene SNOMED-CT buscando en tu equipo y hacer click en Execute, luego de unos minutos se subirá el archivo.
+
 <img src="https://github.com/SIMSADIs/Servidor-Terminologico-SnowStorm/blob/deploy-snowstorm/3.gif" alt="Subir archivo" width="500" height="300">
+
+4.- Finalmente se puede ir a ver en el log del contenedor de snowstorm si comienzan a subirse correctamente SNOMED-CT.
 
 <img src="https://github.com/SIMSADIs/Servidor-Terminologico-SnowStorm/blob/deploy-snowstorm/4.gif" alt="Revisando logs" width="500" height="300">
 
