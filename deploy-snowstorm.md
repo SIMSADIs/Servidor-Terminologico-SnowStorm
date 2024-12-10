@@ -2,51 +2,52 @@
 
 Para desplegar SnowStorm se deben ejecutar los siguientes comandos en la terminal del dispositivo después de haber instalado los requerimientos que se muentran en la rama principal  de este repositorio. Adicional a eso debes estar en modo root en la terminal.
 
-1.-
+1.- Va a directorio personal
 ```
 cd
 ```
 
-2.-
+2.- Verifica el estado de servicio docker 
 ```
 systemctl status docker
 ```
 
-3.-
+3.- Crea volumen portainer_data, este crea almacenamiento persistente para los datos.
 ```
 docker volume create portainer_data
 ```
 
-4.-
+4.- Inicia un contenedor de Docker en segundo plano (-d) para Portainer CE. Publica los puertos 8000 y 9443 en la máquina host, monta el socket de Docker para gestión local, y utiliza el volumen portainer_data para persistencia de datos. Además, asegura que el contenedor se reinicie automáticamente (--restart=always) si se detiene.
 ```
 docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest
 ```
 
-5.-
+5.- Ajusta el límite de memoria mapeada necesario para Elasticsearch.
+
 ```
 sudo sysctl -w vm.max_map_count=262144
 ```
 
-6.-
+6.- Descarga Snowstorm versión 10.3.1.
 ```
 wget https://github.com/IHTSDO/snowstorm/archive/refs/tags/10.3.1.zip
 ```
 
-7.-
+7.- Extrae los archivos de Snowstorm.
 ```
 unzip 10.3.1.zip
 ```
 
-8.-
+8.- Entra al directorio descomprimido.
 ```
 cd snowstorm-10.3.1/
 ```
 
-9.-
+9.- Abre el archivo de configuración de Docker Compose.
 ```
 nano docker-compose.yml
 ```
-10.-
+10.- Levanta los servicios en segundo plano.
 ```
 docker-compose up -d
 ```
