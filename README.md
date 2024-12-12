@@ -142,13 +142,10 @@ Para desplegar Bahmni se necesita docker, docker-compose y Java instalados de la
 1.- Se actualizan los paquetes.
 ```
 sudo apt-get update
-
 ```
 2.- Se instala tomcat.
 
 ```
-
 sudo apt install tomcat10 tomcat10-admin
-
 ```
 
