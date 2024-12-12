@@ -136,3 +136,19 @@ java hapi-fhir-cli.jar
 
 ## Requisitos para desplegar Bahmni
 
+
+Para desplegar Bahmni se necesita docker, docker-compose y Java instalados de la forma ya mostrada, adicional a ello se debe instalar Tomcat en su versión más reciente, la que se utilizó en este trabajo fue la 10.
+
+1.- Se actualizan los paquetes.
+```
+sudo apt-get update
+
+```
+2.- Se instala tomcat.
+
+```
+
+sudo apt install tomcat10 tomcat10-admin
+
+```
+
