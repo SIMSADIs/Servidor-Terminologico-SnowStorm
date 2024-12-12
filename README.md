@@ -55,6 +55,6 @@ Host config
 
 ```
 
-<img src="https://github.com/SIMSADIs/Servidor-Terminologico-SnowStorm/blob/setting-cloud/enter-droplet.gif" alt="Pegar ID" width="500" height="300">
+<img src="https://github.com/SIMSADIs/Servidor-Terminologico-SnowStorm/blob/setting-cloud/enter-droplet.gif" alt="Pegar ID" width="600" height="400">
 
 Finalmene en el terminal del droplet iniciado en Visual Studio Code se deben instalar los requerimientos para desplegar SnowStorm, se debe desplegar SnowStorm y se le deben cargar sus terminologías como se muestra en este repositorio.
