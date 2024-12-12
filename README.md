@@ -55,6 +55,7 @@ Host config
 ```
 
 En este ejemplo se muestra cómo entrar al archivo de configuración del host, cómo entrar al servidor y cómo navegar en los directorios del servidor.
+
 <img src="https://github.com/SIMSADIs/Servidor-Terminologico-SnowStorm/blob/setting-cloud/enter-droplet.gif" alt="Pegar ID" width="650" height="400">
 
 
