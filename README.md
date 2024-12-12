@@ -44,7 +44,7 @@ adduser biomedicauv
 usermod -aG sudo biomedicauv
 ```
 
-Para  entrar al Droplet mediante la llave SSH creada se hace mediante Visual Studio Code, se debe instalar la extensión Remote - SSH y Remote - SSH: Editing Configuration Files, posteriormente se debe ajustar el archivo SSH  config file con los datos del servidor y la dirección de tu llave en tu dispositivo cómo se muestra en el ejemplo. 
+Para entrar al Droplet mediante la llave SSH creada desde la terminal de Visual Studio Code, se debe instalar la extensión Remote - SSH y Remote - SSH: Editing Configuration Files, posteriormente se debe ajustar el archivo SSH  config file con los datos del servidor y la dirección de tu llave en tu dispositivo cómo se muestra en el ejemplo. 
 
 ```
 # Read more about SSH config files: https://linux.die.net/man/5/ssh_config
@@ -52,10 +52,10 @@ Host config
     HostName  IP_server
     User root
     IdentityFile ~/.ssh/key_name
-
 ```
 
-<img src="https://github.com/SIMSADIs/Servidor-Terminologico-SnowStorm/blob/setting-cloud/enter-droplet.gif" alt="Pegar ID" width="650" height="400">
 En este ejemplo se muestra cómo entrar al archivo de configuración del host, cómo entrar al servidor y cómo navegar en los directorios del servidor.
+<img src="https://github.com/SIMSADIs/Servidor-Terminologico-SnowStorm/blob/setting-cloud/enter-droplet.gif" alt="Pegar ID" width="650" height="400">
+
 
 Finalmene en el terminal del droplet iniciado en Visual Studio Code se deben instalar los requerimientos para desplegar SnowStorm, se debe desplegar SnowStorm y se le deben cargar sus terminologías como se muestra en este repositorio.
