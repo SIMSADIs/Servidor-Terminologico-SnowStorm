@@ -47,7 +47,7 @@ usermod -aG sudo biomedicauv
 Para entrar al Droplet mediante la llave SSH creada desde la terminal de Visual Studio Code, se debe instalar la extensión Remote - SSH y Remote - SSH: Editing Configuration Files, posteriormente se debe ajustar el archivo SSH  config file con los datos del servidor y la dirección de tu llave en tu dispositivo cómo se muestra en el ejemplo. 
 
 ```
-# Read more about SSH config files: https://linux.die.net/man/5/ssh_config
+# SSH config files
 Host config
     HostName  IP_server
     User root
