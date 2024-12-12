@@ -4,42 +4,42 @@ En el presente repositorio se muestra como hacer la configuración inicial para 
 
 Los comandos utilizados para ello fueron los siguientes.
 
-1.-
+1.- Al ingresar el comando se pide que ingreses el directorio donde se alojará la clave SSH junto a su nombre y contraseña.
 ```
 ssh-keygen
 ```
 
-2.-
+2.- Entras a la raíz del directorio de tu servidor.
 ```
-ssh root@137.184.182.23
+ssh root@<IP_servidor>
 ```
 
-3.-
+3.- Abres el archivo de configuración de la clave SSH.
 ```
 cd .shh && sudo nano authorized_keys
 ```
 
-4.-
+4.- Pegas tu clave SSH, debe ser algo similar a la de abajo.
 ```
-Paste: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGRw7LylFN5MOfcRYnhOqZOVhroISrZoXgmFoNom0Q+F ferna@Fxrni
+Paste: ssh-config AAAAC3NzaC1lZDI1NTE5AAAAIGKLHH7oTYcRYnhOkywmklnAoFFGHSXgmFoNom0Q+F USER@user
 ```
 
-5.-
+5.- Guardas el archivo .
 ```
 ctrl s
 ```
 
-6.-
+6.- Cierras el archivo.
 ```
 ctrl x
 ```
 
-7.-
+7.- Agregas usuario a la clave.
 ```
 adduser biomedicauv
 ```
 
-8.-
+8.-  Entras al usuario.
 ```
 usermod -aG sudo biomedicauv
 ```
@@ -56,5 +56,6 @@ Host config
 ```
 
 <img src="https://github.com/SIMSADIs/Servidor-Terminologico-SnowStorm/blob/setting-cloud/enter-droplet.gif" alt="Pegar ID" width="650" height="400">
+En este ejemplo se muestra cómo entrar al archivo de configuración del host, cómo entrar al servidor y cómo navegar en los directorios del servidor.
 
 Finalmene en el terminal del droplet iniciado en Visual Studio Code se deben instalar los requerimientos para desplegar SnowStorm, se debe desplegar SnowStorm y se le deben cargar sus terminologías como se muestra en este repositorio.
