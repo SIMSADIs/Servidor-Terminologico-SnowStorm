@@ -12,17 +12,117 @@ Para cargar las terminologías se hace a través de la API FHIR de SnowStorm, de
 
 #### Loinc
 ```
- ./hapi-fhir-cli upload-terminology -d Loinc_2.74.zip -v r4 -t http://localhost:8080/fhir -u http://loinc.org -s 10GB
+ ./hapi-fhir-cli upload-terminology -d Loinc_2.74.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://loinc.org -s 10GB
 ```
 
 #### Cie-10
 ```
- ./hapi-fhir-cli upload-terminology -d cie_10_deis.zip -v r4 -t http://localhost:8080/fhir -u http://hl7.org/fhir/sid/icd-10 -s 1GB
+ ./hapi-fhir-cli upload-terminology -d cie_10_deis.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://hl7.org/fhir/sid/icd-10 -s 1GB
 ```
 
-#### Norma 820
+#### Norma 2.3.1
 ```
- ./hapi-fhir-cli upload-terminology -d cie_10_deis.zip -v r4 -t http://192.168.10.187:8080/fhir -u http://hl7.org/fhir/sid/icd-10
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+ ./hapi-fhir-cli upload-terminology -d Anamnesis-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Anamnesis
+
+
 ```
 
 ### Carga de Value Sets
