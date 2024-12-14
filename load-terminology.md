@@ -104,6 +104,8 @@ Para cargar las terminologías se hace a través de la API FHIR de SnowStorm, de
 
  ./hapi-fhir-cli upload-terminology -d TipoOtroTelefono-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Tipo-Otro-Telefono
 
+ ./hapi-fhir-cli upload-terminology -d TipoDocumentoDEIS-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Tipo-Documento-DEIS
+
  ./hapi-fhir-cli upload-terminology -d TipoPertinenciaEstab-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Tipo-Pertinencia-Establecimiento
 
  ./hapi-fhir-cli upload-terminology -d TipoPrestador-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Tipo-Prestador
