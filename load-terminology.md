@@ -78,7 +78,7 @@ Para cargar las terminologías se hace a través de la API FHIR de SnowStorm, de
 
  ./hapi-fhir-cli upload-terminology -d Regiones-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Regiones
 
- ./hapi-fhir-cli upload-terminology -d Religiones-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Religiones
+ ./hapi-fhir-cli upload-terminology -d Religiones-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/Religion
 
  ./hapi-fhir-cli upload-terminology -d SEREMI-820.zip -v r4 -t http://137.184.182.23:8080/fhir -u http://biomedica.uv.cl/SIMSADI/SEREMI
 
