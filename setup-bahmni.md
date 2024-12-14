@@ -44,7 +44,7 @@ docker compose up -d
 
 ### Instegración de Bahmni con SnowStorm
 
-Para integrar SnowStorm con bahmni se ajustan los parámetros como indica este [link](https://bahmni.atlassian.net/wiki/spaces/BAH/pages/3183345706/Bahmni-SNOMED+TS+Integration+Local+Installation+Guide+using+docker)
+Para integrar SnowStorm con Bahmni se ajustan los parámetros como indica este [link](https://bahmni.atlassian.net/wiki/spaces/BAH/pages/3183345706/Bahmni-SNOMED+TS+Integration+Local+Installation+Guide+using+docker)
 
 
 
