@@ -1,6 +1,6 @@
 # SnowStorm en Bahmni
 
-SnowStorm es un servidor terminológico OpenSource capáz de validar y codificar terminos y conceptos clínicos en diversas aplicaciones médicas, una de ellas, altamente relevante en los diversos sístemas de salud son los registros clínicos eléctrónicos (EMR) los que contienen diversidad de información médica de los pacientes. En este proyecto para demostrar la usabilidad de SnowStorm se integró con el HIS Bahmni, esta integración permite registrar la información de los pacientes con calidad en el EMR y como consecuencia toma de mejores desiciones clínicas.
+SnowStorm es un servidor terminológico OpenSource capáz de validar y codificar terminos y conceptos clínicos en diversas aplicaciones de salud, una de ellas altamente utilizada en los diversos sístemas de salud son los registros clínicos eléctrónicos (EMR) en donde se registra diversidad de información de los pacientes. En este proyecto para demostrar la usabilidad de SnowStorm se integró con el HIS Bahmni, esta integración permite registrar la información de los pacientes de forma codificada y estandarizada asegurando así la calidad de la mismo.
 
 Para crear la integración de SnowStorm con Bahmni se debe seguir lo comentado a continuación
 
@@ -15,7 +15,7 @@ En este proyecto se decidió utilizar Bahmni lite ya que para fines de testeo Un
 
 A continuación se muestran los comandos con los cuales se instala Bahmni, estos los podemos encontrar en https://bahmni.atlassian.net/wiki/spaces/BAH/pages/3117744129/Getting+Started+Quickly+with+Bahmni+on+Docker#Running-Bahmni-Standard
 
-Ubicate en un directorio a elección en la terminal y has los siguientes comandos 
+Ubicate en un directorio a elección en la terminal en modo root y ejecuta los siguientes comandos.
 ```
 
 # Clona el repositorio de Bahmni docker
@@ -44,8 +44,7 @@ docker compose up -d
 
 ### Instegración de Bahmni con SnowStorm
 
-
-Para integrar snowstor con bahmni se ajustan los parámetros como indica este link https://bahmni.atlassian.net/wiki/spaces/BAH/pages/3183345706/Bahmni-SNOMED+TS+Integration+Local+Installation+Guide+using+docker
+Para integrar SnowStorm con bahmni se ajustan los parámetros como indica este link https://bahmni.atlassian.net/wiki/spaces/BAH/pages/3183345706/Bahmni-SNOMED+TS+Integration+Local+Installation+Guide+using+docker
 
 
 
