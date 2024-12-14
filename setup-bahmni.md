@@ -6,14 +6,14 @@ Para crear la integración de SnowStorm con Bahmni se debe seguir lo comentado a
 
 ### Instalación de Bahmni
 
-Para instalar Bahmnni se siguió la documentación realizada por Nicolás Muñoz en su trabajó de título en el repositorio Bahmni SIMSADI https://github.com/Mitridato/BAHMNI-SIMSADI/tree/main?tab=readme-ov-file. En esta documentación se explica cómo instalar Bahmni y configurarlo para darle funcionalidades.
+Para instalar Bahmnni se siguió la documentación realizada por Nicolás Muñoz en su trabajó de título en el repositorio [Bahmni SIMSADI](https://github.com/Mitridato/BAHMNI-SIMSADI/tree/main?tab=readme-ov-file). En esta documentación se explica cómo instalar Bahmni y configurarlo para darle funcionalidades. 
 
-Adicinal a la documentación mencionada también se revisó la documentación original en Bahmni Wiki https://bahmni.atlassian.net/wiki/spaces/BAH/overview?homepageId=491527
+Adicinal a la documentación mencionada también se revisó la documentación original en [Bahmni Wiki](https://bahmni.atlassian.net/wiki/spaces/BAH/overview?homepageId=491527).
 
 En este proyecto se decidió utilizar Bahmni lite ya que para fines de testeo Universitario es suficiente, si se quisiera ahondar un poco más ya a casos de hospitales de alta complejidad se recomienda el uso de Bahmni Standar
 
 
-A continuación se muestran los comandos con los cuales se instala Bahmni, estos los podemos encontrar en https://bahmni.atlassian.net/wiki/spaces/BAH/pages/3117744129/Getting+Started+Quickly+with+Bahmni+on+Docker#Running-Bahmni-Standard
+A continuación se muestran los comandos con los cuales se instala Bahmni, estos los podemos encontrar en el [link](https://bahmni.atlassian.net/wiki/spaces/BAH/pages/3117744129/Getting+Started+Quickly+with+Bahmni+on+Docker#Running-Bahmni-Standard).
 
 Ubicate en un directorio a elección en la terminal en modo root y ejecuta los siguientes comandos.
 ```
@@ -44,7 +44,7 @@ docker compose up -d
 
 ### Instegración de Bahmni con SnowStorm
 
-Para integrar SnowStorm con bahmni se ajustan los parámetros como indica este link https://bahmni.atlassian.net/wiki/spaces/BAH/pages/3183345706/Bahmni-SNOMED+TS+Integration+Local+Installation+Guide+using+docker
+Para integrar SnowStorm con bahmni se ajustan los parámetros como indica este [link](https://bahmni.atlassian.net/wiki/spaces/BAH/pages/3183345706/Bahmni-SNOMED+TS+Integration+Local+Installation+Guide+using+docker)
 
 
 
