@@ -6,7 +6,7 @@ Cabe destacar que en este proyecto se subió la Norma Técnica 2.3.1 de Chile, e
 
 ### Carga de terminologías
 
-Para cargar las terminologías en Snowstorm, se utiliza la API RESTful FHIR. Para ello, primero debes posicionarte en el directorio donde se encuentren los archivos .zip con la terminología en el terminal. Luego, ejecuta los comandos correspondientes, que utilizan la herramienta hapi-fhir-cli. En estos comandos, se especifica el nombre del archivo .zip de la terminología y se proporciona una URL que permite el reconocimiento y registro de la terminología cargada.
+Para cargar las terminologías en Snowstorm, se utiliza la API RESTful FHIR. Para ello, primero debes posicionarte en el directorio donde se encuentren los archivos .zip con la terminología en el terminal. Luego, ejecuta los comandos correspondientes que utilizan la herramienta hapi-fhir-cli. En estos comandos, se especifica el nombre del archivo .zip de la terminología y se proporciona una URL que permite el reconocimiento y registro de la terminología cargada.
 
 #### Loinc
 ```
