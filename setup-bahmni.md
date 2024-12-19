@@ -10,7 +10,7 @@ Para instalar Bahmnni se siguió la documentación realizada por Nicolás Muñoz
 
 Adicional a la documentación mencionada también se revisó la documentación original en [Bahmni Wiki](https://bahmni.atlassian.net/wiki/spaces/BAH/overview?homepageId=491527).
 
-En este proyecto se decidió utilizar Bahmni lite ya que para fines de testeo Universitario es suficiente, si se quisiera ahondar un poco más ya a casos de hospitales de alta complejidad se recomienda el uso de Bahmni Standar
+En este proyecto se decidió utilizar Bahmni lite ya que para fines de testeo Universitario es suficiente, si se quisiera ahondar un poco más ya a casos de hospitales de alta complejidad se recomienda el uso de Bahmni Estándar.
 
 
 A continuación se muestran los comandos con los cuales se instala Bahmni, estos los podemos encontrar en el [link](https://bahmni.atlassian.net/wiki/spaces/BAH/pages/3117744129/Getting+Started+Quickly+with+Bahmni+on+Docker#Running-Bahmni-Standard).
