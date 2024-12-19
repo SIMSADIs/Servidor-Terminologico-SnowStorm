@@ -8,7 +8,7 @@ Para crear la integración de SnowStorm con Bahmni se debe seguir lo comentado a
 
 Para instalar Bahmnni se siguió la documentación realizada por Nicolás Muñoz en su trabajó de título en el repositorio [Bahmni SIMSADI](https://github.com/Mitridato/BAHMNI-SIMSADI/tree/main?tab=readme-ov-file). En esta documentación se explica cómo instalar Bahmni y configurarlo para darle funcionalidades. 
 
-Adicinal a la documentación mencionada también se revisó la documentación original en [Bahmni Wiki](https://bahmni.atlassian.net/wiki/spaces/BAH/overview?homepageId=491527).
+Adicional a la documentación mencionada también se revisó la documentación original en [Bahmni Wiki](https://bahmni.atlassian.net/wiki/spaces/BAH/overview?homepageId=491527).
 
 En este proyecto se decidió utilizar Bahmni lite ya que para fines de testeo Universitario es suficiente, si se quisiera ahondar un poco más ya a casos de hospitales de alta complejidad se recomienda el uso de Bahmni Standar
 
