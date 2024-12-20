@@ -7,7 +7,7 @@ El presente repositorio indica como desplegar SnowStorm de forma local y en la n
 Para desplegar el servidor, configurarlo, crear la integración interoperable con Bahmni y subirlo a la nube se debe seguir lo mostrado en los enlaces que están a continuación.
 - [Despliegue de SnowStorm](https://github.com/SIMSADIs/Terminology-Server-SnowStorm/blob/deploy-snowstorm/deploy-snowstorm.md)
 - [Carga de terminología](https://github.com/SIMSADIs/Terminology-Server-SnowStorm/blob/load-terminology/load-terminology.md)
-- [Integración con Bahmni](https://github.com/SIMSADIs/Terminology-Server-SnowStorm/blob/snowstorm-deployment/setup-bahmni.md)
+- [Despliegue de Bahmni e integración con SnowStorm](https://github.com/SIMSADIs/Terminology-Server-SnowStorm/blob/snowstorm-deployment/setup-bahmni.md)
 - [Configuración de la nube](https://github.com/SIMSADIs/Servidor-Terminologico-SnowStorm/tree/setting-cloud)
 
 
