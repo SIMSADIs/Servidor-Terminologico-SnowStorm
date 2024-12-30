@@ -2,11 +2,11 @@
 
 Snowstor es un servidor terminológico compatible con una serie de tesauros médicos que escenciales en la medicina global como SNOMED- CT, Loinc, Cie-10, value sets, codesystems y muchos más.
 
-Cabe destacar que en este proyecto se subió la Norma Técnica 2.3.1 de Chile, el estandar terminológico Loinc y Cie-10 además de algunos Value-Set de la guía coreCL. Esto se hizo de forma local en el servido
+Cabe destacar que en este proyecto se subió la Norma Técnica 820 de Chile, el estandar terminológico Loinc y Cie-10 además de algunos Value-Set de la guía coreCL. Esto se hizo de forma local en el servido
 
 ### Carga de terminologías
 
-Para cargar las terminologías en Snowstorm, se utiliza la API RESTful FHIR. Para ello, primero debes posicionarte en el directorio donde se encuentren los archivos .zip con la terminología en el terminal. Luego, ejecuta los comandos correspondientes que utilizan la herramienta hapi-fhir-cli. En estos comandos, se especifica el nombre del archivo .zip de la terminología y se proporciona una URL que permite el reconocimiento y registro de la terminología cargada.
+Para cargar las terminologías en Snowstorm, se utiliza la API REST. Para ello, primero debes posicionarte en el directorio donde se encuentren los archivos .zip con la terminología en el terminal. Luego, ejecuta los comandos correspondientes que utilizan la herramienta hapi-fhir-cli. En estos comandos, se especifica el nombre del archivo .zip de la terminología y se proporciona una URL que permite el reconocimiento y registro de la terminología cargada.
 
 #### Loinc
 ```
