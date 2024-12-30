@@ -119,7 +119,7 @@ Para instalar Hapi-Fhir Tool se utiliza la documentación entregada en https://h
 
 1.- Descargar el archivo comprimido llamado hapi-fhir-[versión]-cli.zip desde https://github.com/hapifhir/hapi-fhir/releases .
 
-2.- Descomprime el archivo descargado, utiliza la terminal, ubicate en el directorio donde se encuntra el archivo e ingresa el siguiente comando, recuerda cambiar la versión a la que estés ocupando.
+2.- Descomprime el archivo descargado, utiliza la terminal, ubicate en el directorio donde se encuentra el archivo e ingresa el siguiente comando, recuerda cambiar la versión a la que estés ocupando.
 ```
 unzip hapi-fhir-7.4.2-cli.zip
 ```
