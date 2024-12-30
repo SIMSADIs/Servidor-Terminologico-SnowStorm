@@ -1,6 +1,6 @@
 # Cargando terminología
 
-Snowstor es un servidor terminológico compatible con una serie de tesauros médicos que escenciales en la medicina global como SNOMED- CT, Loinc, Cie-10, value sets, codesystems y muchos más.
+Snowstorm es un servidor terminológico compatible con una serie de tesauros médicos que esenciales en la medicina global como SNOMED- CT, Loinc, Cie-10, value sets, codesystems y muchos más.
 
 Cabe destacar que en este proyecto se subió la Norma Técnica 820 de Chile, el estandar terminológico Loinc y Cie-10 además de algunos Value-Set de la guía coreCL. Esto se hizo de forma local en el servido
 
