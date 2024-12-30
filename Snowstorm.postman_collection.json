@@ -1,0 +1,2726 @@
+{
+	"info": {
+		"_postman_id": "fdaa7908-a4e3-441c-b79d-8b9450cecd8e",
+		"name": "Snowstorm",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39581393"
+	},
+	"item": [
+		{
+			"name": "Snowstorm FHIR 4.0 GI (HL7)",
+			"item": [
+				{
+					"name": "CodeSystem",
+					"item": [
+						{
+							"name": "Operaciones",
+							"item": [
+								{
+									"name": "lookup",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{access_token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/CodeSystem/$lookup?system=http://snomed.info/sct&code=74400008&version=http://snomed.info/sct/900000000000207008/version/20240301&displayLanguage=es",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"CodeSystem",
+												"$lookup"
+											],
+											"query": [
+												{
+													"key": "system",
+													"value": "http://snomed.info/sct"
+												},
+												{
+													"key": "code",
+													"value": "74400008"
+												},
+												{
+													"key": "version",
+													"value": "http://snomed.info/sct/900000000000207008/version/20240301"
+												},
+												{
+													"key": "displayLanguage",
+													"value": "es"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "lookupdel codigo 50620007 (Neuropatia autonomia diabetica)",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/CodeSystem/$lookup?system=http://snomed.info/sct&code=50620007&version=http://snomed.info/sct/449081005/version/20240331&displayLanguage=es",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"CodeSystem",
+														"$lookup"
+													],
+													"query": [
+														{
+															"key": "system",
+															"value": "http://snomed.info/sct"
+														},
+														{
+															"key": "code",
+															"value": "50620007"
+														},
+														{
+															"key": "version",
+															"value": "http://snomed.info/sct/449081005/version/20240331"
+														},
+														{
+															"key": "displayLanguage",
+															"value": "es"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "X-Powered-By",
+													"value": "HAPI FHIR 5.6.3-si REST Server (FHIR Server; FHIR 4.0.1/R4)"
+												},
+												{
+													"key": "X-Request-ID",
+													"value": "M5MVCrdGVYOKskxj"
+												},
+												{
+													"key": "Content-Encoding",
+													"value": "gzip"
+												},
+												{
+													"key": "X-Content-Type-Options",
+													"value": "nosniff"
+												},
+												{
+													"key": "X-XSS-Protection",
+													"value": "1; mode=block"
+												},
+												{
+													"key": "Cache-Control",
+													"value": "no-cache, no-store, max-age=0, must-revalidate"
+												},
+												{
+													"key": "Pragma",
+													"value": "no-cache"
+												},
+												{
+													"key": "Expires",
+													"value": "0"
+												},
+												{
+													"key": "X-Frame-Options",
+													"value": "DENY"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/fhir+json;charset=UTF-8"
+												},
+												{
+													"key": "Transfer-Encoding",
+													"value": "chunked"
+												},
+												{
+													"key": "Date",
+													"value": "Fri, 22 Sep 2023 20:14:19 GMT"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=60"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"resourceType\": \"Parameters\",\n    \"parameter\": [\n        {\n            \"name\": \"code\",\n            \"valueString\": \"50620007\"\n        },\n        {\n            \"name\": \"display\",\n            \"valueString\": \"neuropatía autonómica debida a diabetes mellitus\"\n        },\n        {\n            \"name\": \"name\",\n            \"valueString\": \"SNOMED CT release 2023-04-30\"\n        },\n        {\n            \"name\": \"system\",\n            \"valueString\": \"http://snomed.info/sct\"\n        },\n        {\n            \"name\": \"version\",\n            \"valueString\": \"http://snomed.info/sct/449081005/version/20230430\"\n        },\n        {\n            \"name\": \"active\",\n            \"valueBoolean\": true\n        },\n        {\n            \"name\": \"property\",\n            \"part\": [\n                {\n                    \"name\": \"code\",\n                    \"valueString\": \"effectiveTime\"\n                },\n                {\n                    \"name\": \"valueString\",\n                    \"valueString\": \"20160131\"\n                }\n            ]\n        },\n        {\n            \"name\": \"property\",\n            \"part\": [\n                {\n                    \"name\": \"code\",\n                    \"valueString\": \"moduleId\"\n                },\n                {\n                    \"name\": \"value\",\n                    \"valueCode\": \"900000000000207008\"\n                }\n            ]\n        },\n        {\n            \"extension\": [\n                {\n                    \"url\": \"http://snomed.info/fhir/StructureDefinition/designation-use-context\",\n                    \"extension\": [\n                        {\n                            \"url\": \"context\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000509007\"\n                            }\n                        },\n                        {\n                            \"url\": \"role\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000549004\",\n                                \"display\": \"ACCEPTABLE\"\n                            }\n                        },\n                        {\n                            \"url\": \"type\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000013009\",\n                                \"display\": \"Synonym\"\n                            }\n                        }\n                    ]\n                },\n                {\n                    \"url\": \"http://snomed.info/fhir/StructureDefinition/designation-use-context\",\n                    \"extension\": [\n                        {\n                            \"url\": \"context\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000508004\"\n                            }\n                        },\n                        {\n                            \"url\": \"role\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000549004\",\n                                \"display\": \"ACCEPTABLE\"\n                            }\n                        },\n                        {\n                            \"url\": \"type\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000013009\",\n                                \"display\": \"Synonym\"\n                            }\n                        }\n                    ]\n                }\n            ],\n            \"name\": \"designation\",\n            \"part\": [\n                {\n                    \"name\": \"language\",\n                    \"valueCode\": \"en\"\n                },\n                {\n                    \"name\": \"use\",\n                    \"valueCoding\": {\n                        \"system\": \"http://snomed.info/sct\",\n                        \"code\": \"900000000000013009\",\n                        \"display\": \"Synonym\"\n                    }\n                },\n                {\n                    \"name\": \"value\",\n                    \"valueString\": \"Autonomic neuropathy with diabetes mellitus\"\n                }\n            ]\n        },\n        {\n            \"extension\": [\n                {\n                    \"url\": \"http://snomed.info/fhir/StructureDefinition/designation-use-context\",\n                    \"extension\": [\n                        {\n                            \"url\": \"context\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000509007\"\n                            }\n                        },\n                        {\n                            \"url\": \"role\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000549004\",\n                                \"display\": \"ACCEPTABLE\"\n                            }\n                        },\n                        {\n                            \"url\": \"type\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000013009\",\n                                \"display\": \"Synonym\"\n                            }\n                        }\n                    ]\n                },\n                {\n                    \"url\": \"http://snomed.info/fhir/StructureDefinition/designation-use-context\",\n                    \"extension\": [\n                        {\n                            \"url\": \"context\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000508004\"\n                            }\n                        },\n                        {\n                            \"url\": \"role\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000549004\",\n                                \"display\": \"ACCEPTABLE\"\n                            }\n                        },\n                        {\n                            \"url\": \"type\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000013009\",\n                                \"display\": \"Synonym\"\n                            }\n                        }\n                    ]\n                }\n            ],\n            \"name\": \"designation\",\n            \"part\": [\n                {\n                    \"name\": \"language\",\n                    \"valueCode\": \"en\"\n                },\n                {\n                    \"name\": \"use\",\n                    \"valueCoding\": {\n                        \"system\": \"http://snomed.info/sct\",\n                        \"code\": \"900000000000013009\",\n                        \"display\": \"Synonym\"\n                    }\n                },\n                {\n                    \"name\": \"value\",\n                    \"valueString\": \"Diabetic autonomic neuropathy\"\n                }\n            ]\n        },\n        {\n            \"extension\": [\n                {\n                    \"url\": \"http://snomed.info/fhir/StructureDefinition/designation-use-context\",\n                    \"extension\": [\n                        {\n                            \"url\": \"context\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"450828004\"\n                            }\n                        },\n                        {\n                            \"url\": \"role\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000548007\",\n                                \"display\": \"PREFERRED\"\n                            }\n                        },\n                        {\n                            \"url\": \"type\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000003001\",\n                                \"display\": \"Fully specified name\"\n                            }\n                        }\n                    ]\n                }\n            ],\n            \"name\": \"designation\",\n            \"part\": [\n                {\n                    \"name\": \"language\",\n                    \"valueCode\": \"es\"\n                },\n                {\n                    \"name\": \"use\",\n                    \"valueCoding\": {\n                        \"system\": \"http://snomed.info/sct\",\n                        \"code\": \"900000000000003001\",\n                        \"display\": \"Fully specified name\"\n                    }\n                },\n                {\n                    \"name\": \"value\",\n                    \"valueString\": \"neuropatía autonómica debida a diabetes mellitus (trastorno)\"\n                }\n            ]\n        },\n        {\n            \"extension\": [\n                {\n                    \"url\": \"http://snomed.info/fhir/StructureDefinition/designation-use-context\",\n                    \"extension\": [\n                        {\n                            \"url\": \"context\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000509007\"\n                            }\n                        },\n                        {\n                            \"url\": \"role\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000548007\",\n                                \"display\": \"PREFERRED\"\n                            }\n                        },\n                        {\n                            \"url\": \"type\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000003001\",\n                                \"display\": \"Fully specified name\"\n                            }\n                        }\n                    ]\n                },\n                {\n                    \"url\": \"http://snomed.info/fhir/StructureDefinition/designation-use-context\",\n                    \"extension\": [\n                        {\n                            \"url\": \"context\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000508004\"\n                            }\n                        },\n                        {\n                            \"url\": \"role\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000548007\",\n                                \"display\": \"PREFERRED\"\n                            }\n                        },\n                        {\n                            \"url\": \"type\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000003001\",\n                                \"display\": \"Fully specified name\"\n                            }\n                        }\n                    ]\n                }\n            ],\n            \"name\": \"designation\",\n            \"part\": [\n                {\n                    \"name\": \"language\",\n                    \"valueCode\": \"en\"\n                },\n                {\n                    \"name\": \"use\",\n                    \"valueCoding\": {\n                        \"system\": \"http://snomed.info/sct\",\n                        \"code\": \"900000000000003001\",\n                        \"display\": \"Fully specified name\"\n                    }\n                },\n                {\n                    \"name\": \"value\",\n                    \"valueString\": \"Autonomic neuropathy due to diabetes mellitus (disorder)\"\n                }\n            ]\n        },\n        {\n            \"extension\": [\n                {\n                    \"url\": \"http://snomed.info/fhir/StructureDefinition/designation-use-context\",\n                    \"extension\": [\n                        {\n                            \"url\": \"context\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000509007\"\n                            }\n                        },\n                        {\n                            \"url\": \"role\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000548007\",\n                                \"display\": \"PREFERRED\"\n                            }\n                        },\n                        {\n                            \"url\": \"type\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000013009\",\n                                \"display\": \"Synonym\"\n                            }\n                        }\n                    ]\n                },\n                {\n                    \"url\": \"http://snomed.info/fhir/StructureDefinition/designation-use-context\",\n                    \"extension\": [\n                        {\n                            \"url\": \"context\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000508004\"\n                            }\n                        },\n                        {\n                            \"url\": \"role\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000548007\",\n                                \"display\": \"PREFERRED\"\n                            }\n                        },\n                        {\n                            \"url\": \"type\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000013009\",\n                                \"display\": \"Synonym\"\n                            }\n                        }\n                    ]\n                }\n            ],\n            \"name\": \"designation\",\n            \"part\": [\n                {\n                    \"name\": \"language\",\n                    \"valueCode\": \"en\"\n                },\n                {\n                    \"name\": \"use\",\n                    \"valueCoding\": {\n                        \"system\": \"http://snomed.info/sct\",\n                        \"code\": \"900000000000013009\",\n                        \"display\": \"Synonym\"\n                    }\n                },\n                {\n                    \"name\": \"value\",\n                    \"valueString\": \"Autonomic neuropathy due to diabetes mellitus\"\n                }\n            ]\n        },\n        {\n            \"extension\": [\n                {\n                    \"url\": \"http://snomed.info/fhir/StructureDefinition/designation-use-context\",\n                    \"extension\": [\n                        {\n                            \"url\": \"context\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000509007\"\n                            }\n                        },\n                        {\n                            \"url\": \"role\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000549004\",\n                                \"display\": \"ACCEPTABLE\"\n                            }\n                        },\n                        {\n                            \"url\": \"type\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000013009\",\n                                \"display\": \"Synonym\"\n                            }\n                        }\n                    ]\n                },\n                {\n                    \"url\": \"http://snomed.info/fhir/StructureDefinition/designation-use-context\",\n                    \"extension\": [\n                        {\n                            \"url\": \"context\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000508004\"\n                            }\n                        },\n                        {\n                            \"url\": \"role\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000549004\",\n                                \"display\": \"ACCEPTABLE\"\n                            }\n                        },\n                        {\n                            \"url\": \"type\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000013009\",\n                                \"display\": \"Synonym\"\n                            }\n                        }\n                    ]\n                }\n            ],\n            \"name\": \"designation\",\n            \"part\": [\n                {\n                    \"name\": \"language\",\n                    \"valueCode\": \"en\"\n                },\n                {\n                    \"name\": \"use\",\n                    \"valueCoding\": {\n                        \"system\": \"http://snomed.info/sct\",\n                        \"code\": \"900000000000013009\",\n                        \"display\": \"Synonym\"\n                    }\n                },\n                {\n                    \"name\": \"value\",\n                    \"valueString\": \"Autonomic neuropathy due to diabetes\"\n                }\n            ]\n        },\n        {\n            \"extension\": [\n                {\n                    \"url\": \"http://snomed.info/fhir/StructureDefinition/designation-use-context\",\n                    \"extension\": [\n                        {\n                            \"url\": \"context\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"450828004\"\n                            }\n                        },\n                        {\n                            \"url\": \"role\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000549004\",\n                                \"display\": \"ACCEPTABLE\"\n                            }\n                        },\n                        {\n                            \"url\": \"type\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000013009\",\n                                \"display\": \"Synonym\"\n                            }\n                        }\n                    ]\n                }\n            ],\n            \"name\": \"designation\",\n            \"part\": [\n                {\n                    \"name\": \"language\",\n                    \"valueCode\": \"es\"\n                },\n                {\n                    \"name\": \"use\",\n                    \"valueCoding\": {\n                        \"system\": \"http://snomed.info/sct\",\n                        \"code\": \"900000000000013009\",\n                        \"display\": \"Synonym\"\n                    }\n                },\n                {\n                    \"name\": \"value\",\n                    \"valueString\": \"neuropatía autonómica diabética\"\n                }\n            ]\n        },\n        {\n            \"extension\": [\n                {\n                    \"url\": \"http://snomed.info/fhir/StructureDefinition/designation-use-context\",\n                    \"extension\": [\n                        {\n                            \"url\": \"context\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"450828004\"\n                            }\n                        },\n                        {\n                            \"url\": \"role\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000548007\",\n                                \"display\": \"PREFERRED\"\n                            }\n                        },\n                        {\n                            \"url\": \"type\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000013009\",\n                                \"display\": \"Synonym\"\n                            }\n                        }\n                    ]\n                }\n            ],\n            \"name\": \"designation\",\n            \"part\": [\n                {\n                    \"name\": \"language\",\n                    \"valueCode\": \"es\"\n                },\n                {\n                    \"name\": \"use\",\n                    \"valueCoding\": {\n                        \"system\": \"http://snomed.info/sct\",\n                        \"code\": \"900000000000013009\",\n                        \"display\": \"Synonym\"\n                    }\n                },\n                {\n                    \"name\": \"value\",\n                    \"valueString\": \"neuropatía autonómica debida a diabetes mellitus\"\n                }\n            ]\n        },\n        {\n            \"name\": \"property\",\n            \"part\": [\n                {\n                    \"name\": \"code\",\n                    \"valueString\": \"parent\"\n                },\n                {\n                    \"name\": \"value\",\n                    \"valueCode\": \"737240009\"\n                }\n            ]\n        },\n        {\n            \"name\": \"property\",\n            \"part\": [\n                {\n                    \"name\": \"code\",\n                    \"valueString\": \"parent\"\n                },\n                {\n                    \"name\": \"value\",\n                    \"valueCode\": \"737241008\"\n                }\n            ]\n        },\n        {\n            \"name\": \"property\",\n            \"part\": [\n                {\n                    \"name\": \"code\",\n                    \"valueString\": \"parent\"\n                },\n                {\n                    \"name\": \"value\",\n                    \"valueCode\": \"230572002\"\n                }\n            ]\n        },\n        {\n            \"name\": \"property\",\n            \"part\": [\n                {\n                    \"name\": \"code\",\n                    \"valueString\": \"child\"\n                },\n                {\n                    \"name\": \"value\",\n                    \"valueCode\": \"368141000119106\"\n                }\n            ]\n        },\n        {\n            \"name\": \"property\",\n            \"part\": [\n                {\n                    \"name\": \"code\",\n                    \"valueString\": \"child\"\n                },\n                {\n                    \"name\": \"value\",\n                    \"valueCode\": \"860883001\"\n                }\n            ]\n        },\n        {\n            \"name\": \"property\",\n            \"part\": [\n                {\n                    \"name\": \"code\",\n                    \"valueString\": \"child\"\n                },\n                {\n                    \"name\": \"value\",\n                    \"valueCode\": \"1144894004\"\n                }\n            ]\n        },\n        {\n            \"name\": \"property\",\n            \"part\": [\n                {\n                    \"name\": \"code\",\n                    \"valueString\": \"child\"\n                },\n                {\n                    \"name\": \"value\",\n                    \"valueCode\": \"712882000\"\n                }\n            ]\n        },\n        {\n            \"name\": \"property\",\n            \"part\": [\n                {\n                    \"name\": \"code\",\n                    \"valueString\": \"child\"\n                },\n                {\n                    \"name\": \"value\",\n                    \"valueCode\": \"712883005\"\n                }\n            ]\n        },\n        {\n            \"name\": \"property\",\n            \"part\": [\n                {\n                    \"name\": \"code\",\n                    \"valueString\": \"child\"\n                },\n                {\n                    \"name\": \"value\",\n                    \"valueCode\": \"713704004\"\n                }\n            ]\n        },\n        {\n            \"name\": \"property\",\n            \"part\": [\n                {\n                    \"name\": \"code\",\n                    \"valueString\": \"child\"\n                },\n                {\n                    \"name\": \"value\",\n                    \"valueCode\": \"38205001\"\n                }\n            ]\n        }\n    ]\n}"
+										},
+										{
+											"name": "lookup del código 74400008 (apendicitis)",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/CodeSystem/$lookup?system=http://snomed.info/sct&code=74400008&version=http://snomed.info/sct/449081005/version/20240331&displayLanguage=es",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"CodeSystem",
+														"$lookup"
+													],
+													"query": [
+														{
+															"key": "system",
+															"value": "http://snomed.info/sct"
+														},
+														{
+															"key": "code",
+															"value": "74400008"
+														},
+														{
+															"key": "version",
+															"value": "http://snomed.info/sct/449081005/version/20240331"
+														},
+														{
+															"key": "displayLanguage",
+															"value": "es"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Date",
+													"value": "Mon, 25 Sep 2023 20:23:56 GMT"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/fhir+json;charset=UTF-8"
+												},
+												{
+													"key": "Transfer-Encoding",
+													"value": "chunked"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "X-Powered-By",
+													"value": "HAPI FHIR 5.6.3-si REST Server (FHIR Server; FHIR 4.0.1/R4)"
+												},
+												{
+													"key": "X-Request-ID",
+													"value": "d185vfjGchm2NULs"
+												},
+												{
+													"key": "Content-Encoding",
+													"value": "gzip"
+												},
+												{
+													"key": "X-Content-Type-Options",
+													"value": "nosniff"
+												},
+												{
+													"key": "X-XSS-Protection",
+													"value": "1; mode=block"
+												},
+												{
+													"key": "Cache-Control",
+													"value": "no-cache, no-store, max-age=0, must-revalidate"
+												},
+												{
+													"key": "Pragma",
+													"value": "no-cache"
+												},
+												{
+													"key": "Expires",
+													"value": "0"
+												},
+												{
+													"key": "X-Frame-Options",
+													"value": "DENY"
+												},
+												{
+													"key": "Server",
+													"value": "Apigee Router"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"resourceType\": \"Parameters\",\n    \"parameter\": [\n        {\n            \"name\": \"code\",\n            \"valueString\": \"74400008\"\n        },\n        {\n            \"name\": \"display\",\n            \"valueString\": \"apendicitis\"\n        },\n        {\n            \"name\": \"name\",\n            \"valueString\": \"SNOMED CT release 2023-04-30\"\n        },\n        {\n            \"name\": \"system\",\n            \"valueString\": \"http://snomed.info/sct\"\n        },\n        {\n            \"name\": \"version\",\n            \"valueString\": \"http://snomed.info/sct/449081005/version/20230430\"\n        },\n        {\n            \"name\": \"active\",\n            \"valueBoolean\": true\n        },\n        {\n            \"name\": \"property\",\n            \"part\": [\n                {\n                    \"name\": \"code\",\n                    \"valueString\": \"effectiveTime\"\n                },\n                {\n                    \"name\": \"valueString\",\n                    \"valueString\": \"20020131\"\n                }\n            ]\n        },\n        {\n            \"name\": \"property\",\n            \"part\": [\n                {\n                    \"name\": \"code\",\n                    \"valueString\": \"moduleId\"\n                },\n                {\n                    \"name\": \"value\",\n                    \"valueCode\": \"900000000000207008\"\n                }\n            ]\n        },\n        {\n            \"extension\": [\n                {\n                    \"url\": \"http://snomed.info/fhir/StructureDefinition/designation-use-context\",\n                    \"extension\": [\n                        {\n                            \"url\": \"context\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"450828004\"\n                            }\n                        },\n                        {\n                            \"url\": \"role\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000548007\",\n                                \"display\": \"PREFERRED\"\n                            }\n                        },\n                        {\n                            \"url\": \"type\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000013009\",\n                                \"display\": \"Synonym\"\n                            }\n                        }\n                    ]\n                }\n            ],\n            \"name\": \"designation\",\n            \"part\": [\n                {\n                    \"name\": \"language\",\n                    \"valueCode\": \"es\"\n                },\n                {\n                    \"name\": \"use\",\n                    \"valueCoding\": {\n                        \"system\": \"http://snomed.info/sct\",\n                        \"code\": \"900000000000013009\",\n                        \"display\": \"Synonym\"\n                    }\n                },\n                {\n                    \"name\": \"value\",\n                    \"valueString\": \"apendicitis\"\n                }\n            ]\n        },\n        {\n            \"extension\": [\n                {\n                    \"url\": \"http://snomed.info/fhir/StructureDefinition/designation-use-context\",\n                    \"extension\": [\n                        {\n                            \"url\": \"context\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"450828004\"\n                            }\n                        },\n                        {\n                            \"url\": \"role\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000549004\",\n                                \"display\": \"ACCEPTABLE\"\n                            }\n                        },\n                        {\n                            \"url\": \"type\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000013009\",\n                                \"display\": \"Synonym\"\n                            }\n                        }\n                    ]\n                }\n            ],\n            \"name\": \"designation\",\n            \"part\": [\n                {\n                    \"name\": \"language\",\n                    \"valueCode\": \"es\"\n                },\n                {\n                    \"name\": \"use\",\n                    \"valueCoding\": {\n                        \"system\": \"http://snomed.info/sct\",\n                        \"code\": \"900000000000013009\",\n                        \"display\": \"Synonym\"\n                    }\n                },\n                {\n                    \"name\": \"value\",\n                    \"valueString\": \"inflamación aguda del apéndice\"\n                }\n            ]\n        },\n        {\n            \"extension\": [\n                {\n                    \"url\": \"http://snomed.info/fhir/StructureDefinition/designation-use-context\",\n                    \"extension\": [\n                        {\n                            \"url\": \"context\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000509007\"\n                            }\n                        },\n                        {\n                            \"url\": \"role\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000548007\",\n                                \"display\": \"PREFERRED\"\n                            }\n                        },\n                        {\n                            \"url\": \"type\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000013009\",\n                                \"display\": \"Synonym\"\n                            }\n                        }\n                    ]\n                },\n                {\n                    \"url\": \"http://snomed.info/fhir/StructureDefinition/designation-use-context\",\n                    \"extension\": [\n                        {\n                            \"url\": \"context\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000508004\"\n                            }\n                        },\n                        {\n                            \"url\": \"role\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000548007\",\n                                \"display\": \"PREFERRED\"\n                            }\n                        },\n                        {\n                            \"url\": \"type\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000013009\",\n                                \"display\": \"Synonym\"\n                            }\n                        }\n                    ]\n                }\n            ],\n            \"name\": \"designation\",\n            \"part\": [\n                {\n                    \"name\": \"language\",\n                    \"valueCode\": \"en\"\n                },\n                {\n                    \"name\": \"use\",\n                    \"valueCoding\": {\n                        \"system\": \"http://snomed.info/sct\",\n                        \"code\": \"900000000000013009\",\n                        \"display\": \"Synonym\"\n                    }\n                },\n                {\n                    \"name\": \"value\",\n                    \"valueString\": \"Appendicitis\"\n                }\n            ]\n        },\n        {\n            \"extension\": [\n                {\n                    \"url\": \"http://snomed.info/fhir/StructureDefinition/designation-use-context\",\n                    \"extension\": [\n                        {\n                            \"url\": \"context\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000509007\"\n                            }\n                        },\n                        {\n                            \"url\": \"role\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000548007\",\n                                \"display\": \"PREFERRED\"\n                            }\n                        },\n                        {\n                            \"url\": \"type\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000003001\",\n                                \"display\": \"Fully specified name\"\n                            }\n                        }\n                    ]\n                },\n                {\n                    \"url\": \"http://snomed.info/fhir/StructureDefinition/designation-use-context\",\n                    \"extension\": [\n                        {\n                            \"url\": \"context\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000508004\"\n                            }\n                        },\n                        {\n                            \"url\": \"role\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000548007\",\n                                \"display\": \"PREFERRED\"\n                            }\n                        },\n                        {\n                            \"url\": \"type\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000003001\",\n                                \"display\": \"Fully specified name\"\n                            }\n                        }\n                    ]\n                }\n            ],\n            \"name\": \"designation\",\n            \"part\": [\n                {\n                    \"name\": \"language\",\n                    \"valueCode\": \"en\"\n                },\n                {\n                    \"name\": \"use\",\n                    \"valueCoding\": {\n                        \"system\": \"http://snomed.info/sct\",\n                        \"code\": \"900000000000003001\",\n                        \"display\": \"Fully specified name\"\n                    }\n                },\n                {\n                    \"name\": \"value\",\n                    \"valueString\": \"Appendicitis (disorder)\"\n                }\n            ]\n        },\n        {\n            \"extension\": [\n                {\n                    \"url\": \"http://snomed.info/fhir/StructureDefinition/designation-use-context\",\n                    \"extension\": [\n                        {\n                            \"url\": \"context\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"450828004\"\n                            }\n                        },\n                        {\n                            \"url\": \"role\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000548007\",\n                                \"display\": \"PREFERRED\"\n                            }\n                        },\n                        {\n                            \"url\": \"type\",\n                            \"valueCoding\": {\n                                \"system\": \"http://snomed.info/sct\",\n                                \"code\": \"900000000000003001\",\n                                \"display\": \"Fully specified name\"\n                            }\n                        }\n                    ]\n                }\n            ],\n            \"name\": \"designation\",\n            \"part\": [\n                {\n                    \"name\": \"language\",\n                    \"valueCode\": \"es\"\n                },\n                {\n                    \"name\": \"use\",\n                    \"valueCoding\": {\n                        \"system\": \"http://snomed.info/sct\",\n                        \"code\": \"900000000000003001\",\n                        \"display\": \"Fully specified name\"\n                    }\n                },\n                {\n                    \"name\": \"value\",\n                    \"valueString\": \"apendicitis (trastorno)\"\n                }\n            ]\n        },\n        {\n            \"name\": \"property\",\n            \"part\": [\n                {\n                    \"name\": \"code\",\n                    \"valueString\": \"parent\"\n                },\n                {\n                    \"name\": \"value\",\n                    \"valueCode\": \"302168000\"\n                }\n            ]\n        },\n        {\n            \"name\": \"property\",\n            \"part\": [\n                {\n                    \"name\": \"code\",\n                    \"valueString\": \"parent\"\n                },\n                {\n                    \"name\": \"value\",\n                    \"valueCode\": \"18526009\"\n                }\n            ]\n        },\n        {\n            \"name\": \"property\",\n            \"part\": [\n                {\n                    \"name\": \"code\",\n                    \"valueString\": \"child\"\n                },\n                {\n                    \"name\": \"value\",\n                    \"valueCode\": \"32084004\"\n                }\n            ]\n        },\n        {\n            \"name\": \"property\",\n            \"part\": [\n                {\n                    \"name\": \"code\",\n                    \"valueString\": \"child\"\n                },\n                {\n                    \"name\": \"value\",\n                    \"valueCode\": \"91313006\"\n                }\n            ]\n        },\n        {\n            \"name\": \"property\",\n            \"part\": [\n                {\n                    \"name\": \"code\",\n                    \"valueString\": \"child\"\n                },\n                {\n                    \"name\": \"value\",\n                    \"valueCode\": \"67365005\"\n                }\n            ]\n        },\n        {\n            \"name\": \"property\",\n            \"part\": [\n                {\n                    \"name\": \"code\",\n                    \"valueString\": \"child\"\n                },\n                {\n                    \"name\": \"value\",\n                    \"valueCode\": \"85189001\"\n                }\n            ]\n        },\n        {\n            \"name\": \"property\",\n            \"part\": [\n                {\n                    \"name\": \"code\",\n                    \"valueString\": \"child\"\n                },\n                {\n                    \"name\": \"value\",\n                    \"valueCode\": \"8744003\"\n                }\n            ]\n        },\n        {\n            \"name\": \"property\",\n            \"part\": [\n                {\n                    \"name\": \"code\",\n                    \"valueString\": \"child\"\n                },\n                {\n                    \"name\": \"value\",\n                    \"valueCode\": \"26826005\"\n                }\n            ]\n        },\n        {\n            \"name\": \"property\",\n            \"part\": [\n                {\n                    \"name\": \"code\",\n                    \"valueString\": \"child\"\n                },\n                {\n                    \"name\": \"value\",\n                    \"valueCode\": \"1145117000\"\n                }\n            ]\n        },\n        {\n            \"name\": \"property\",\n            \"part\": [\n                {\n                    \"name\": \"code\",\n                    \"valueString\": \"child\"\n                },\n                {\n                    \"name\": \"value\",\n                    \"valueCode\": \"42640003\"\n                }\n            ]\n        },\n        {\n            \"name\": \"property\",\n            \"part\": [\n                {\n                    \"name\": \"code\",\n                    \"valueString\": \"child\"\n                },\n                {\n                    \"name\": \"value\",\n                    \"valueCode\": \"58997001\"\n                }\n            ]\n        },\n        {\n            \"name\": \"property\",\n            \"part\": [\n                {\n                    \"name\": \"code\",\n                    \"valueString\": \"child\"\n                },\n                {\n                    \"name\": \"value\",\n                    \"valueCode\": \"123601005\"\n                }\n            ]\n        },\n        {\n            \"name\": \"property\",\n            \"part\": [\n                {\n                    \"name\": \"code\",\n                    \"valueString\": \"child\"\n                },\n                {\n                    \"name\": \"value\",\n                    \"valueCode\": \"418171008\"\n                }\n            ]\n        },\n        {\n            \"name\": \"property\",\n            \"part\": [\n                {\n                    \"name\": \"code\",\n                    \"valueString\": \"child\"\n                },\n                {\n                    \"name\": \"value\",\n                    \"valueCode\": \"25598004\"\n                }\n            ]\n        },\n        {\n            \"name\": \"property\",\n            \"part\": [\n                {\n                    \"name\": \"code\",\n                    \"valueString\": \"child\"\n                },\n                {\n                    \"name\": \"value\",\n                    \"valueCode\": \"9124008\"\n                }\n            ]\n        },\n        {\n            \"name\": \"property\",\n            \"part\": [\n                {\n                    \"name\": \"code\",\n                    \"valueString\": \"child\"\n                },\n                {\n                    \"name\": \"value\",\n                    \"valueCode\": \"733157003\"\n                }\n            ]\n        },\n        {\n            \"name\": \"property\",\n            \"part\": [\n                {\n                    \"name\": \"code\",\n                    \"valueString\": \"child\"\n                },\n                {\n                    \"name\": \"value\",\n                    \"valueCode\": \"5596004\"\n                }\n            ]\n        }\n    ]\n}"
+										}
+									]
+								},
+								{
+									"name": "validate-code",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{access_token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/CodeSystem/$validate-code?url=http://snomed.info/sct&version=http://snomed.info/sct/900000000000207008/version/20240301&code=371162008",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"CodeSystem",
+												"$validate-code"
+											],
+											"query": [
+												{
+													"key": "url",
+													"value": "http://snomed.info/sct"
+												},
+												{
+													"key": "version",
+													"value": "http://snomed.info/sct/900000000000207008/version/20240301"
+												},
+												{
+													"key": "code",
+													"value": "371162008"
+												},
+												{
+													"key": "",
+													"value": "",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "validate-code 181216001",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/CodeSystem/$validate-code?url=http://snomed.info/sct&version=http://snomed.info/sct/449081005/version/20240331&code=181216001",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"CodeSystem",
+														"$validate-code"
+													],
+													"query": [
+														{
+															"key": "url",
+															"value": "http://snomed.info/sct"
+														},
+														{
+															"key": "version",
+															"value": "http://snomed.info/sct/449081005/version/20240331"
+														},
+														{
+															"key": "code",
+															"value": "181216001"
+														},
+														{
+															"key": "",
+															"value": "",
+															"disabled": true
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "X-Powered-By",
+													"value": "HAPI FHIR 5.6.3-si REST Server (FHIR Server; FHIR 4.0.1/R4)"
+												},
+												{
+													"key": "X-Request-ID",
+													"value": "YweH7ks9CrbYvDek"
+												},
+												{
+													"key": "Content-Encoding",
+													"value": "gzip"
+												},
+												{
+													"key": "X-Content-Type-Options",
+													"value": "nosniff"
+												},
+												{
+													"key": "X-XSS-Protection",
+													"value": "1; mode=block"
+												},
+												{
+													"key": "Cache-Control",
+													"value": "no-cache, no-store, max-age=0, must-revalidate"
+												},
+												{
+													"key": "Pragma",
+													"value": "no-cache"
+												},
+												{
+													"key": "Expires",
+													"value": "0"
+												},
+												{
+													"key": "X-Frame-Options",
+													"value": "DENY"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/fhir+json;charset=UTF-8"
+												},
+												{
+													"key": "Transfer-Encoding",
+													"value": "chunked"
+												},
+												{
+													"key": "Date",
+													"value": "Fri, 22 Sep 2023 20:29:12 GMT"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=60"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"resourceType\": \"Parameters\",\n    \"parameter\": [\n        {\n            \"name\": \"result\",\n            \"valueBoolean\": true\n        },\n        {\n            \"name\": \"display\",\n            \"valueString\": \"Entire lung\"\n        },\n        {\n            \"name\": \"system\",\n            \"valueString\": \"http://snomed.info/sct\"\n        },\n        {\n            \"name\": \"version\",\n            \"valueString\": \"http://snomed.info/sct/449081005/version/20230430\"\n        }\n    ]\n}"
+										},
+										{
+											"name": "validate-code  371162008",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/CodeSystem/$validate-code?url=http://snomed.info/sct&version=http://snomed.info/sct/449081005/version/20240331&code=371162008",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"CodeSystem",
+														"$validate-code"
+													],
+													"query": [
+														{
+															"key": "url",
+															"value": "http://snomed.info/sct"
+														},
+														{
+															"key": "version",
+															"value": "http://snomed.info/sct/449081005/version/20240331"
+														},
+														{
+															"key": "code",
+															"value": "371162008"
+														},
+														{
+															"key": "",
+															"value": "",
+															"disabled": true
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "X-Powered-By",
+													"value": "HAPI FHIR 5.6.3-si REST Server (FHIR Server; FHIR 4.0.1/R4)"
+												},
+												{
+													"key": "X-Request-ID",
+													"value": "BM8OCwBKwq6nAlZR"
+												},
+												{
+													"key": "Content-Encoding",
+													"value": "gzip"
+												},
+												{
+													"key": "X-Content-Type-Options",
+													"value": "nosniff"
+												},
+												{
+													"key": "X-XSS-Protection",
+													"value": "1; mode=block"
+												},
+												{
+													"key": "Cache-Control",
+													"value": "no-cache, no-store, max-age=0, must-revalidate"
+												},
+												{
+													"key": "Pragma",
+													"value": "no-cache"
+												},
+												{
+													"key": "Expires",
+													"value": "0"
+												},
+												{
+													"key": "X-Frame-Options",
+													"value": "DENY"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/fhir+json;charset=UTF-8"
+												},
+												{
+													"key": "Transfer-Encoding",
+													"value": "chunked"
+												},
+												{
+													"key": "Date",
+													"value": "Fri, 22 Sep 2023 20:29:58 GMT"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=60"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"resourceType\": \"Parameters\",\n    \"parameter\": [\n        {\n            \"name\": \"result\",\n            \"valueBoolean\": true\n        },\n        {\n            \"name\": \"display\",\n            \"valueString\": \"Closed fracture of skull\"\n        },\n        {\n            \"name\": \"system\",\n            \"valueString\": \"http://snomed.info/sct\"\n        },\n        {\n            \"name\": \"version\",\n            \"valueString\": \"http://snomed.info/sct/449081005/version/20230430\"\n        }\n    ]\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "Obtener un único CodeSystem",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{access_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/CodeSystem?url=http://snomed.info/sct",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"CodeSystem"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "http://snomed.info/sct"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Obtener un único CodeSystem, preguntar por todas las versiones disponibles del codesystem",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/CodeSystem?url=http://snomed.info/sct",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"CodeSystem"
+											],
+											"query": [
+												{
+													"key": "url",
+													"value": "http://snomed.info/sct"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "HAPI FHIR 5.6.3-si REST Server (FHIR Server; FHIR 4.0.1/R4)"
+										},
+										{
+											"key": "X-Request-ID",
+											"value": "b79QYevJScfnSRo0"
+										},
+										{
+											"key": "Last-Modified",
+											"value": "Fri, 22 Sep 2023 20:00:05 GMT"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/fhir+json;charset=UTF-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 22 Sep 2023 20:00:05 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"resourceType\": \"Bundle\",\n    \"id\": \"4ec75723-5ca7-496e-b3e6-4fe133eec6b3\",\n    \"meta\": {\n        \"lastUpdated\": \"2023-09-22T20:00:05.464+00:00\"\n    },\n    \"type\": \"searchset\",\n    \"total\": 2,\n    \"link\": [\n        {\n            \"relation\": \"self\",\n            \"url\": \"http://192.168.70.139:8080/fhir/CodeSystem?url=http%3A%2F%2Fsnomed.info%2Fsct\"\n        }\n    ],\n    \"entry\": [\n        {\n            \"fullUrl\": \"http://192.168.70.139:8080/fhir/CodeSystem/sct_900000000000207008_20230430\",\n            \"resource\": {\n                \"resourceType\": \"CodeSystem\",\n                \"id\": \"sct_900000000000207008_20230430\",\n                \"url\": \"http://snomed.info/sct\",\n                \"version\": \"http://snomed.info/sct/900000000000207008/version/20230430\",\n                \"name\": \"SNOMED_CT\",\n                \"title\": \"SNOMED CT release 2023-04-30\",\n                \"status\": \"active\",\n                \"date\": \"2023-04-30T00:00:00+00:00\",\n                \"publisher\": \"SNOMED International\",\n                \"hierarchyMeaning\": \"is-a\",\n                \"compositional\": true,\n                \"content\": \"complete\"\n            }\n        },\n        {\n            \"fullUrl\": \"http://192.168.70.139:8080/fhir/CodeSystem/sct_449081005_20230430\",\n            \"resource\": {\n                \"resourceType\": \"CodeSystem\",\n                \"id\": \"sct_449081005_20230430\",\n                \"url\": \"http://snomed.info/sct\",\n                \"version\": \"http://snomed.info/sct/449081005/version/20230430\",\n                \"name\": \"SNOMED_CT\",\n                \"title\": \"SNOMED CT release 2023-04-30\",\n                \"status\": \"active\",\n                \"date\": \"2023-04-30T00:00:00+00:00\",\n                \"publisher\": \"SNOMED International\",\n                \"hierarchyMeaning\": \"is-a\",\n                \"compositional\": true,\n                \"content\": \"complete\"\n            }\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "Obtener versión de un CodeSystem",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{access_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/CodeSystem?url=http://snomed.info/sct&version=http://snomed.info/sct/900000000000207008/version/20240301",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"CodeSystem"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "http://snomed.info/sct"
+										},
+										{
+											"key": "version",
+											"value": "http://snomed.info/sct/900000000000207008/version/20240301"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Obtener versión de un CodeSystem, preguntar si esta disponible la version especificada del codesystem",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/CodeSystem?url=http://snomed.info/sct&version=http://snomed.info/sct/449081005/version/20240331",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"CodeSystem"
+											],
+											"query": [
+												{
+													"key": "url",
+													"value": "http://snomed.info/sct"
+												},
+												{
+													"key": "version",
+													"value": "http://snomed.info/sct/449081005/version/20240331"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "HAPI FHIR 5.6.3-si REST Server (FHIR Server; FHIR 4.0.1/R4)"
+										},
+										{
+											"key": "X-Request-ID",
+											"value": "QstaSEFZOqquuZnZ"
+										},
+										{
+											"key": "Last-Modified",
+											"value": "Fri, 22 Sep 2023 20:01:44 GMT"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/fhir+json;charset=UTF-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 22 Sep 2023 20:01:44 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"resourceType\": \"Bundle\",\n    \"id\": \"7e32e23c-8e17-4748-8f97-f013e0e447ce\",\n    \"meta\": {\n        \"lastUpdated\": \"2023-09-22T20:01:44.022+00:00\"\n    },\n    \"type\": \"searchset\",\n    \"total\": 1,\n    \"link\": [\n        {\n            \"relation\": \"self\",\n            \"url\": \"http://192.168.70.139:8080/fhir/CodeSystem?url=http%3A%2F%2Fsnomed.info%2Fsct&version=http%3A%2F%2Fsnomed.info%2Fsct%2F449081005%2Fversion%2F20230430\"\n        }\n    ],\n    \"entry\": [\n        {\n            \"fullUrl\": \"http://192.168.70.139:8080/fhir/CodeSystem/sct_449081005_20230430\",\n            \"resource\": {\n                \"resourceType\": \"CodeSystem\",\n                \"id\": \"sct_449081005_20230430\",\n                \"url\": \"http://snomed.info/sct\",\n                \"version\": \"http://snomed.info/sct/449081005/version/20230430\",\n                \"name\": \"SNOMED_CT\",\n                \"title\": \"SNOMED CT release 2023-04-30\",\n                \"status\": \"active\",\n                \"date\": \"2023-04-30T00:00:00+00:00\",\n                \"publisher\": \"SNOMED International\",\n                \"hierarchyMeaning\": \"is-a\",\n                \"compositional\": true,\n                \"content\": \"complete\"\n            }\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "Obtener una lista de los CodeSystem",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{access_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/CodeSystem?_count=100",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"CodeSystem"
+									],
+									"query": [
+										{
+											"key": "version",
+											"value": "http://snomed.info/sct/900000000000207008/version/20200131",
+											"disabled": true
+										},
+										{
+											"key": "_count",
+											"value": "100"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Obtener una lista de los CodeSystem y versiones, con un maximo de 10",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/CodeSystem?version=http://snomed.info/sct/900000000000207008/version/20200131&_count=10",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"CodeSystem"
+											],
+											"query": [
+												{
+													"key": "version",
+													"value": "http://snomed.info/sct/900000000000207008/version/20200131"
+												},
+												{
+													"key": "_count",
+													"value": "10"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "HAPI FHIR 5.6.3-si REST Server (FHIR Server; FHIR 4.0.1/R4)"
+										},
+										{
+											"key": "X-Request-ID",
+											"value": "RJNjERwEccLbAwgb"
+										},
+										{
+											"key": "Last-Modified",
+											"value": "Fri, 22 Sep 2023 20:02:15 GMT"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/fhir+json;charset=UTF-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 22 Sep 2023 20:02:15 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"resourceType\": \"Bundle\",\n    \"id\": \"bbc254a8-7bd3-4d10-927b-56f1eb12b01e\",\n    \"meta\": {\n        \"lastUpdated\": \"2023-09-22T20:02:15.712+00:00\"\n    },\n    \"type\": \"searchset\",\n    \"total\": 2,\n    \"link\": [\n        {\n            \"relation\": \"self\",\n            \"url\": \"http://192.168.70.139:8080/fhir/CodeSystem?_count=10\"\n        }\n    ],\n    \"entry\": [\n        {\n            \"fullUrl\": \"http://192.168.70.139:8080/fhir/CodeSystem/sct_449081005_20230430\",\n            \"resource\": {\n                \"resourceType\": \"CodeSystem\",\n                \"id\": \"sct_449081005_20230430\",\n                \"url\": \"http://snomed.info/sct\",\n                \"version\": \"http://snomed.info/sct/449081005/version/20230430\",\n                \"name\": \"SNOMED_CT\",\n                \"title\": \"SNOMED CT release 2023-04-30\",\n                \"status\": \"active\",\n                \"date\": \"2023-04-30T00:00:00+00:00\",\n                \"publisher\": \"SNOMED International\",\n                \"hierarchyMeaning\": \"is-a\",\n                \"compositional\": true,\n                \"content\": \"complete\"\n            }\n        },\n        {\n            \"fullUrl\": \"http://192.168.70.139:8080/fhir/CodeSystem/sct_900000000000207008_20230430\",\n            \"resource\": {\n                \"resourceType\": \"CodeSystem\",\n                \"id\": \"sct_900000000000207008_20230430\",\n                \"url\": \"http://snomed.info/sct\",\n                \"version\": \"http://snomed.info/sct/900000000000207008/version/20230430\",\n                \"name\": \"SNOMED_CT\",\n                \"title\": \"SNOMED CT release 2023-04-30\",\n                \"status\": \"active\",\n                \"date\": \"2023-04-30T00:00:00+00:00\",\n                \"publisher\": \"SNOMED International\",\n                \"hierarchyMeaning\": \"is-a\",\n                \"compositional\": true,\n                \"content\": \"complete\"\n            }\n        }\n    ]\n}"
+								}
+							]
+						}
+					],
+					"description": "Given a code/system, or a Coding, get additional details about the concept, including definition, status, designations, and properties",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "ValueSet",
+					"item": [
+						{
+							"name": "Obtener un único ValueSet",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{access_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/ValueSet/?url=http://minsal.com/fhir/vs/sexo_biologico",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"ValueSet",
+										""
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "http://minsal.com/fhir/vs/sexo_biologico"
+										}
+									]
+								},
+								"description": "Lists all the reference sets available on the instance of the terminology server"
+							},
+							"response": [
+								{
+									"name": "Obtener un único ValueSet sexo_biologico",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/ValueSet/?url=http://minsal.com/fhir/vs/sexo_biologico",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"ValueSet",
+												""
+											],
+											"query": [
+												{
+													"key": "url",
+													"value": "http://minsal.com/fhir/vs/sexo_biologico"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "HAPI FHIR 5.6.3-si REST Server (FHIR Server; FHIR 4.0.1/R4)"
+										},
+										{
+											"key": "X-Request-ID",
+											"value": "3WO4kOpSabQyGJkX"
+										},
+										{
+											"key": "Last-Modified",
+											"value": "Fri, 22 Sep 2023 20:35:57 GMT"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/fhir+json;charset=UTF-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 22 Sep 2023 20:35:57 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"resourceType\": \"Bundle\",\n    \"id\": \"87869cfd-ba9a-47af-89ab-6bd473e24ef1\",\n    \"meta\": {\n        \"lastUpdated\": \"2023-09-22T20:35:57.906+00:00\"\n    },\n    \"type\": \"searchset\",\n    \"total\": 1,\n    \"link\": [\n        {\n            \"relation\": \"self\",\n            \"url\": \"http://192.168.70.139:8080/fhir/ValueSet/?url=http%3A%2F%2Fminsal.com%2Ffhir%2Fvs%2Fsexo_biologico\"\n        }\n    ],\n    \"entry\": [\n        {\n            \"fullUrl\": \"http://192.168.70.139:8080/fhir/ValueSet/b84c1f9c-bc21-4cb0-9c13-0fa1e4ffcdf3\",\n            \"resource\": {\n                \"resourceType\": \"ValueSet\",\n                \"id\": \"b84c1f9c-bc21-4cb0-9c13-0fa1e4ffcdf3\",\n                \"url\": \"http://minsal.com/fhir/vs/sexo_biologico\",\n                \"version\": \"0.1\",\n                \"name\": \"Sexo biologico\",\n                \"status\": \"draft\",\n                \"experimental\": true,\n                \"description\": \"Lista de los posibles sexos para captura de detalle de pacicentes.\",\n                \"copyright\": \"This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (SNOMED International), and distributed by agreement between SNOMED International and HL7. Implementer use of SNOMED CT is not covered by this agreement.\"\n            }\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "Obtener versión de un ValueSet",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{access_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/ValueSet/?url=http://minsal.com/fhir/vs/sexo_biologico&version=0.1",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"ValueSet",
+										""
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "http://minsal.com/fhir/vs/sexo_biologico"
+										},
+										{
+											"key": "version",
+											"value": "0.1"
+										}
+									]
+								},
+								"description": "In this case searching all of SNOMED CT for myocardial (term searching is case insensitive)"
+							},
+							"response": [
+								{
+									"name": "Obtener versión especifica de un ValueSet",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/ValueSet/?url=http://minsal.com/fhir/vs/sexo_biologico&version=0.1",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"ValueSet",
+												""
+											],
+											"query": [
+												{
+													"key": "url",
+													"value": "http://minsal.com/fhir/vs/sexo_biologico"
+												},
+												{
+													"key": "version",
+													"value": "0.1"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "HAPI FHIR 5.6.3-si REST Server (FHIR Server; FHIR 4.0.1/R4)"
+										},
+										{
+											"key": "X-Request-ID",
+											"value": "u26TF6zazHrDqNXs"
+										},
+										{
+											"key": "Last-Modified",
+											"value": "Fri, 22 Sep 2023 20:50:45 GMT"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/fhir+json;charset=UTF-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 22 Sep 2023 20:50:45 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"resourceType\": \"Bundle\",\n    \"id\": \"6e319ec1-fe3f-4b15-87b5-274cb4ca87b8\",\n    \"meta\": {\n        \"lastUpdated\": \"2023-09-22T20:50:45.442+00:00\"\n    },\n    \"type\": \"searchset\",\n    \"total\": 1,\n    \"link\": [\n        {\n            \"relation\": \"self\",\n            \"url\": \"http://192.168.70.139:8080/fhir/ValueSet/?url=http%3A%2F%2Fminsal.com%2Ffhir%2Fvs%2Fsexo_biologico&version=0.1\"\n        }\n    ],\n    \"entry\": [\n        {\n            \"fullUrl\": \"http://192.168.70.139:8080/fhir/ValueSet/b84c1f9c-bc21-4cb0-9c13-0fa1e4ffcdf3\",\n            \"resource\": {\n                \"resourceType\": \"ValueSet\",\n                \"id\": \"b84c1f9c-bc21-4cb0-9c13-0fa1e4ffcdf3\",\n                \"url\": \"http://minsal.com/fhir/vs/sexo_biologico\",\n                \"version\": \"0.1\",\n                \"name\": \"Sexo biologico\",\n                \"status\": \"draft\",\n                \"experimental\": true,\n                \"description\": \"Lista de los posibles sexos para captura de detalle de pacicentes.\",\n                \"copyright\": \"This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (SNOMED International), and distributed by agreement between SNOMED International and HL7. Implementer use of SNOMED CT is not covered by this agreement.\"\n            }\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "Obtener versión de un ValueSet Copy",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{access_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/ValueSet/?url=http://minsal.com/fhir/vs/sexo_biologico&version=0.1",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"ValueSet",
+										""
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "http://minsal.com/fhir/vs/sexo_biologico"
+										},
+										{
+											"key": "version",
+											"value": "0.1"
+										},
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								},
+								"description": "In this case searching all of SNOMED CT for myocardial (term searching is case insensitive)"
+							},
+							"response": [
+								{
+									"name": "Obtener versión especifica de un ValueSet",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/ValueSet/?url=http://minsal.com/fhir/vs/sexo_biologico&version=0.1",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"ValueSet",
+												""
+											],
+											"query": [
+												{
+													"key": "url",
+													"value": "http://minsal.com/fhir/vs/sexo_biologico"
+												},
+												{
+													"key": "version",
+													"value": "0.1"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "HAPI FHIR 5.6.3-si REST Server (FHIR Server; FHIR 4.0.1/R4)"
+										},
+										{
+											"key": "X-Request-ID",
+											"value": "u26TF6zazHrDqNXs"
+										},
+										{
+											"key": "Last-Modified",
+											"value": "Fri, 22 Sep 2023 20:50:45 GMT"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/fhir+json;charset=UTF-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 22 Sep 2023 20:50:45 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"resourceType\": \"Bundle\",\n    \"id\": \"6e319ec1-fe3f-4b15-87b5-274cb4ca87b8\",\n    \"meta\": {\n        \"lastUpdated\": \"2023-09-22T20:50:45.442+00:00\"\n    },\n    \"type\": \"searchset\",\n    \"total\": 1,\n    \"link\": [\n        {\n            \"relation\": \"self\",\n            \"url\": \"http://192.168.70.139:8080/fhir/ValueSet/?url=http%3A%2F%2Fminsal.com%2Ffhir%2Fvs%2Fsexo_biologico&version=0.1\"\n        }\n    ],\n    \"entry\": [\n        {\n            \"fullUrl\": \"http://192.168.70.139:8080/fhir/ValueSet/b84c1f9c-bc21-4cb0-9c13-0fa1e4ffcdf3\",\n            \"resource\": {\n                \"resourceType\": \"ValueSet\",\n                \"id\": \"b84c1f9c-bc21-4cb0-9c13-0fa1e4ffcdf3\",\n                \"url\": \"http://minsal.com/fhir/vs/sexo_biologico\",\n                \"version\": \"0.1\",\n                \"name\": \"Sexo biologico\",\n                \"status\": \"draft\",\n                \"experimental\": true,\n                \"description\": \"Lista de los posibles sexos para captura de detalle de pacicentes.\",\n                \"copyright\": \"This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (SNOMED International), and distributed by agreement between SNOMED International and HL7. Implementer use of SNOMED CT is not covered by this agreement.\"\n            }\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "Busqueda de un ValueSet con un criterio de busqueda especificado",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{access_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/ValueSet/?name=sexo",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"ValueSet",
+										""
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "version",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "name",
+											"value": "sexo"
+										}
+									]
+								},
+								"description": "In this case searching all of SNOMED CT for myocardial (term searching is case insensitive)"
+							},
+							"response": [
+								{
+									"name": "Obtener versión especifica de un ValueSet",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/ValueSet/?url=http://minsal.com/fhir/vs/sexo_biologico&version=0.1",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"ValueSet",
+												""
+											],
+											"query": [
+												{
+													"key": "url",
+													"value": "http://minsal.com/fhir/vs/sexo_biologico"
+												},
+												{
+													"key": "version",
+													"value": "0.1"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "HAPI FHIR 5.6.3-si REST Server (FHIR Server; FHIR 4.0.1/R4)"
+										},
+										{
+											"key": "X-Request-ID",
+											"value": "u26TF6zazHrDqNXs"
+										},
+										{
+											"key": "Last-Modified",
+											"value": "Fri, 22 Sep 2023 20:50:45 GMT"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/fhir+json;charset=UTF-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 22 Sep 2023 20:50:45 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"resourceType\": \"Bundle\",\n    \"id\": \"6e319ec1-fe3f-4b15-87b5-274cb4ca87b8\",\n    \"meta\": {\n        \"lastUpdated\": \"2023-09-22T20:50:45.442+00:00\"\n    },\n    \"type\": \"searchset\",\n    \"total\": 1,\n    \"link\": [\n        {\n            \"relation\": \"self\",\n            \"url\": \"http://192.168.70.139:8080/fhir/ValueSet/?url=http%3A%2F%2Fminsal.com%2Ffhir%2Fvs%2Fsexo_biologico&version=0.1\"\n        }\n    ],\n    \"entry\": [\n        {\n            \"fullUrl\": \"http://192.168.70.139:8080/fhir/ValueSet/b84c1f9c-bc21-4cb0-9c13-0fa1e4ffcdf3\",\n            \"resource\": {\n                \"resourceType\": \"ValueSet\",\n                \"id\": \"b84c1f9c-bc21-4cb0-9c13-0fa1e4ffcdf3\",\n                \"url\": \"http://minsal.com/fhir/vs/sexo_biologico\",\n                \"version\": \"0.1\",\n                \"name\": \"Sexo biologico\",\n                \"status\": \"draft\",\n                \"experimental\": true,\n                \"description\": \"Lista de los posibles sexos para captura de detalle de pacicentes.\",\n                \"copyright\": \"This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (SNOMED International), and distributed by agreement between SNOMED International and HL7. Implementer use of SNOMED CT is not covered by this agreement.\"\n            }\n        }\n    ]\n}"
+								},
+								{
+									"name": "busqueda  de un ValueSet con cirterio de busqueda",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/ValueSet/?name=sexo",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"ValueSet",
+												""
+											],
+											"query": [
+												{
+													"key": "url",
+													"value": "",
+													"disabled": true
+												},
+												{
+													"key": "version",
+													"value": "",
+													"disabled": true
+												},
+												{
+													"key": "name",
+													"value": "sexo"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "HAPI FHIR 5.6.3-si REST Server (FHIR Server; FHIR 4.0.1/R4)"
+										},
+										{
+											"key": "X-Request-ID",
+											"value": "tZfaJNjYx38Ldqx9"
+										},
+										{
+											"key": "Last-Modified",
+											"value": "Sun, 24 Sep 2023 12:38:43 GMT"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/fhir+json;charset=UTF-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 24 Sep 2023 12:38:43 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"resourceType\": \"Bundle\",\n    \"id\": \"1b95d032-5656-4d06-a2f4-a6d82b6bf9ca\",\n    \"meta\": {\n        \"lastUpdated\": \"2023-09-24T12:38:43.493+00:00\"\n    },\n    \"type\": \"searchset\",\n    \"total\": 1,\n    \"link\": [\n        {\n            \"relation\": \"self\",\n            \"url\": \"http://192.168.70.139:8080/fhir/ValueSet/?name=sexo\"\n        }\n    ],\n    \"entry\": [\n        {\n            \"fullUrl\": \"http://192.168.70.139:8080/fhir/ValueSet/b84c1f9c-bc21-4cb0-9c13-0fa1e4ffcdf3\",\n            \"resource\": {\n                \"resourceType\": \"ValueSet\",\n                \"id\": \"b84c1f9c-bc21-4cb0-9c13-0fa1e4ffcdf3\",\n                \"url\": \"http://minsal.com/fhir/vs/sexo_biologico\",\n                \"version\": \"0.1\",\n                \"name\": \"Sexo biologico\",\n                \"status\": \"draft\",\n                \"experimental\": true,\n                \"description\": \"Lista de los posibles sexos para captura de detalle de pacicentes.\",\n                \"copyright\": \"This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (SNOMED International), and distributed by agreement between SNOMED International and HL7. Implementer use of SNOMED CT is not covered by this agreement.\"\n            }\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "Obtener una lista de ValueSets",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/ValueSet/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"ValueSet",
+										""
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Obtener una lista de ValueSets",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/ValueSet/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"ValueSet",
+												""
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "HAPI FHIR 5.6.3-si REST Server (FHIR Server; FHIR 4.0.1/R4)"
+										},
+										{
+											"key": "X-Request-ID",
+											"value": "VoTBJTj8AAUeGVXR"
+										},
+										{
+											"key": "Last-Modified",
+											"value": "Sun, 24 Sep 2023 23:34:57 GMT"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/fhir+json;charset=UTF-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 24 Sep 2023 23:34:57 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"resourceType\": \"Bundle\",\n    \"id\": \"f8eaabfe-6108-4cc5-b235-d5ed012d120d\",\n    \"meta\": {\n        \"lastUpdated\": \"2023-09-24T23:34:57.576+00:00\"\n    },\n    \"type\": \"searchset\",\n    \"total\": 1,\n    \"link\": [\n        {\n            \"relation\": \"self\",\n            \"url\": \"http://192.168.70.139:8080/fhir/ValueSet/\"\n        }\n    ],\n    \"entry\": [\n        {\n            \"fullUrl\": \"http://192.168.70.139:8080/fhir/ValueSet/b84c1f9c-bc21-4cb0-9c13-0fa1e4ffcdf3\",\n            \"resource\": {\n                \"resourceType\": \"ValueSet\",\n                \"id\": \"b84c1f9c-bc21-4cb0-9c13-0fa1e4ffcdf3\",\n                \"url\": \"http://minsal.com/fhir/vs/sexo_biologico\",\n                \"version\": \"0.1\",\n                \"name\": \"Sexo biologico\",\n                \"status\": \"draft\",\n                \"experimental\": true,\n                \"description\": \"Lista de los posibles sexos para captura de detalle de pacicentes.\",\n                \"copyright\": \"This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (SNOMED International), and distributed by agreement between SNOMED International and HL7. Implementer use of SNOMED CT is not covered by this agreement.\"\n            }\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "$expand",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{access_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/ValueSet/$expand?url=http://snomed.info/sct/449081005/version/20230430?fhir_vs=ecl/<<404684003&count=10&displayLanguage=es&filter=perforada",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"ValueSet",
+										"$expand"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "http://snomed.info/sct/449081005/version/20230430?fhir_vs=ecl/<<404684003"
+										},
+										{
+											"key": "count",
+											"value": "10"
+										},
+										{
+											"key": "displayLanguage",
+											"value": "es"
+										},
+										{
+											"key": "filter",
+											"value": "perforada"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "$expand concepto apendicitis mediante una ecl derivada del nodo snomed",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/ValueSet/$expand?url=http://snomed.info/sct/449081005/version/20240331?fhir_vs=ecl/<<74400008&count=10&displayLanguage=es",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"ValueSet",
+												"$expand"
+											],
+											"query": [
+												{
+													"key": "url",
+													"value": "http://snomed.info/sct/449081005/version/20240331?fhir_vs=ecl/<<74400008"
+												},
+												{
+													"key": "count",
+													"value": "10"
+												},
+												{
+													"key": "displayLanguage",
+													"value": "es"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "HAPI FHIR 5.6.3-si REST Server (FHIR Server; FHIR 4.0.1/R4)"
+										},
+										{
+											"key": "X-Request-ID",
+											"value": "WQ1xjE7QFagzLzfq"
+										},
+										{
+											"key": "Content-Location",
+											"value": "http://192.168.70.139:8080/fhir/ValueSet/73e7db8a-8d43-48ad-8bd8-76bba25ee1eb"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/fhir+json;charset=UTF-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 24 Sep 2023 23:36:51 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"resourceType\": \"ValueSet\",\n    \"id\": \"73e7db8a-8d43-48ad-8bd8-76bba25ee1eb\",\n    \"url\": \"http://snomed.info/sct/449081005/version/20230430?fhir_vs=ecl/<<74400008\",\n    \"status\": \"active\",\n    \"copyright\": \"This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (SNOMED International), and distributed by agreement between SNOMED International and HL7. Implementer use of SNOMED CT is not covered by this agreement.\",\n    \"expansion\": {\n        \"id\": \"6285bb59-f4c7-4ddb-9497-6d4febb554b2\",\n        \"timestamp\": \"2023-09-24T23:36:51+00:00\",\n        \"total\": 34,\n        \"offset\": 0,\n        \"parameter\": [\n            {\n                \"name\": \"version\",\n                \"valueUri\": \"http://snomed.info/sct|http://snomed.info/sct/449081005/version/20230430\"\n            },\n            {\n                \"name\": \"displayLanguage\",\n                \"valueString\": \"es\"\n            }\n        ],\n        \"contains\": [\n            {\n                \"system\": \"http://snomed.info/sct\",\n                \"code\": \"1255222000\",\n                \"display\": \"apendicitis crónica perforada\"\n            },\n            {\n                \"system\": \"http://snomed.info/sct\",\n                \"code\": \"1145117000\",\n                \"display\": \"apendicitis gangrenosa\"\n            },\n            {\n                \"system\": \"http://snomed.info/sct\",\n                \"code\": \"735591005\",\n                \"display\": \"apendicitis flemonosa aguda\"\n            },\n            {\n                \"system\": \"http://snomed.info/sct\",\n                \"code\": \"733157003\",\n                \"display\": \"enfermedad de Crohn del apéndice ileocecal\"\n            },\n            {\n                \"system\": \"http://snomed.info/sct\",\n                \"code\": \"698294004\",\n                \"display\": \"apendicitis aguda con peritonitis localizada\"\n            },\n            {\n                \"system\": \"http://snomed.info/sct\",\n                \"code\": \"418171008\",\n                \"display\": \"apendicitis complicada\"\n            },\n            {\n                \"system\": \"http://snomed.info/sct\",\n                \"code\": \"286967008\",\n                \"display\": \"apendicitis aguda perforada\"\n            },\n            {\n                \"system\": \"http://snomed.info/sct\",\n                \"code\": \"266439004\",\n                \"display\": \"apendicitis aguda con absceso apendicular\"\n            },\n            {\n                \"system\": \"http://snomed.info/sct\",\n                \"code\": \"235770006\",\n                \"display\": \"apendicitis supurativa aguda\"\n            },\n            {\n                \"system\": \"http://snomed.info/sct\",\n                \"code\": \"235769005\",\n                \"display\": \"apendicitis focal aguda\"\n            }\n        ]\n    }\n}"
+								},
+								{
+									"name": "$expand apendicitis con filtro perforada",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/ValueSet/$expand?url=http://snomed.info/sct/449081005/version/20240331?fhir_vs=ecl/<<74400008&count=10&displayLanguage=es&filter=perforada",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"ValueSet",
+												"$expand"
+											],
+											"query": [
+												{
+													"key": "url",
+													"value": "http://snomed.info/sct/449081005/version/20240331?fhir_vs=ecl/<<74400008"
+												},
+												{
+													"key": "count",
+													"value": "10"
+												},
+												{
+													"key": "displayLanguage",
+													"value": "es"
+												},
+												{
+													"key": "filter",
+													"value": "perforada"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "HAPI FHIR 5.6.3-si REST Server (FHIR Server; FHIR 4.0.1/R4)"
+										},
+										{
+											"key": "X-Request-ID",
+											"value": "kiXYf4Vn7AQetf7V"
+										},
+										{
+											"key": "Content-Location",
+											"value": "http://192.168.70.139:8080/fhir/ValueSet/37e5d9d0-6174-474b-8b6a-908406d0f41e"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/fhir+json;charset=UTF-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 25 Sep 2023 01:02:24 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"resourceType\": \"ValueSet\",\n    \"id\": \"37e5d9d0-6174-474b-8b6a-908406d0f41e\",\n    \"url\": \"http://snomed.info/sct/449081005/version/20230430?fhir_vs=ecl/<<74400008\",\n    \"status\": \"active\",\n    \"copyright\": \"This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (SNOMED International), and distributed by agreement between SNOMED International and HL7. Implementer use of SNOMED CT is not covered by this agreement.\",\n    \"expansion\": {\n        \"id\": \"9b0a676c-a1a5-4c74-be4d-ea476e0e17be\",\n        \"timestamp\": \"2023-09-25T01:02:24+00:00\",\n        \"total\": 3,\n        \"offset\": 0,\n        \"parameter\": [\n            {\n                \"name\": \"version\",\n                \"valueUri\": \"http://snomed.info/sct|http://snomed.info/sct/449081005/version/20230430\"\n            },\n            {\n                \"name\": \"displayLanguage\",\n                \"valueString\": \"es\"\n            }\n        ],\n        \"contains\": [\n            {\n                \"system\": \"http://snomed.info/sct\",\n                \"code\": \"286967008\",\n                \"display\": \"apendicitis aguda perforada\"\n            },\n            {\n                \"system\": \"http://snomed.info/sct\",\n                \"code\": \"1255222000\",\n                \"display\": \"apendicitis crónica perforada\"\n            },\n            {\n                \"system\": \"http://snomed.info/sct\",\n                \"code\": \"95547004\",\n                \"display\": \"apendicitis supurativa perforada\"\n            }\n        ]\n    }\n}"
+								},
+								{
+									"name": "$expand todos los hallazgos con filtro diabetes mellitus",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/ValueSet/$expand?url=http://snomed.info/sct/449081005/version/20240331?fhir_vs=ecl/<<404684003&count=10&displayLanguage=es&filter=diabetes mellitus",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"ValueSet",
+												"$expand"
+											],
+											"query": [
+												{
+													"key": "url",
+													"value": "http://snomed.info/sct/449081005/version/20240331?fhir_vs=ecl/<<404684003"
+												},
+												{
+													"key": "count",
+													"value": "10"
+												},
+												{
+													"key": "displayLanguage",
+													"value": "es"
+												},
+												{
+													"key": "filter",
+													"value": "diabetes mellitus"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "HAPI FHIR 5.6.3-si REST Server (FHIR Server; FHIR 4.0.1/R4)"
+										},
+										{
+											"key": "X-Request-ID",
+											"value": "A0YTGozaPi3oEdYW"
+										},
+										{
+											"key": "Content-Location",
+											"value": "http://192.168.70.139:8080/fhir/ValueSet/f57001e2-8e78-4923-97ab-83b899afaa42"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/fhir+json;charset=UTF-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 25 Sep 2023 01:01:01 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"resourceType\": \"ValueSet\",\n    \"id\": \"f57001e2-8e78-4923-97ab-83b899afaa42\",\n    \"url\": \"http://snomed.info/sct/449081005/version/20230430?fhir_vs=ecl/<<404684003\",\n    \"status\": \"active\",\n    \"copyright\": \"This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (SNOMED International), and distributed by agreement between SNOMED International and HL7. Implementer use of SNOMED CT is not covered by this agreement.\",\n    \"expansion\": {\n        \"id\": \"cba53db5-58c4-4b3c-8ea3-7aaf8f153ee2\",\n        \"timestamp\": \"2023-09-25T01:01:01+00:00\",\n        \"total\": 585,\n        \"offset\": 0,\n        \"parameter\": [\n            {\n                \"name\": \"version\",\n                \"valueUri\": \"http://snomed.info/sct|http://snomed.info/sct/449081005/version/20230430\"\n            },\n            {\n                \"name\": \"displayLanguage\",\n                \"valueString\": \"es\"\n            }\n        ],\n        \"contains\": [\n            {\n                \"system\": \"http://snomed.info/sct\",\n                \"code\": \"73211009\",\n                \"display\": \"diabetes mellitus\"\n            },\n            {\n                \"system\": \"http://snomed.info/sct\",\n                \"code\": \"11530004\",\n                \"display\": \"diabetes mellitus lábil\"\n            },\n            {\n                \"system\": \"http://snomed.info/sct\",\n                \"code\": \"46635009\",\n                \"display\": \"diabetes mellitus tipo 1\"\n            },\n            {\n                \"system\": \"http://snomed.info/sct\",\n                \"code\": \"44054006\",\n                \"display\": \"diabetes mellitus tipo 2\"\n            },\n            {\n                \"system\": \"http://snomed.info/sct\",\n                \"code\": \"530558861000132104\",\n                \"display\": \"diabetes mellitus atípica\"\n            },\n            {\n                \"system\": \"http://snomed.info/sct\",\n                \"code\": \"49817004\",\n                \"display\": \"diabetes mellitus neonatal\"\n            },\n            {\n                \"system\": \"http://snomed.info/sct\",\n                \"code\": \"8801005\",\n                \"display\": \"diabetes mellitus secundaria\"\n            },\n            {\n                \"system\": \"http://snomed.info/sct\",\n                \"code\": \"783722008\",\n                \"display\": \"miopatía y diabetes mellitus\"\n            },\n            {\n                \"system\": \"http://snomed.info/sct\",\n                \"code\": \"5368009\",\n                \"display\": \"diabetes mellitus medicamentosa\"\n            },\n            {\n                \"system\": \"http://snomed.info/sct\",\n                \"code\": \"11687002\",\n                \"display\": \"diabetes mellitus gestacional\"\n            }\n        ]\n    }\n}"
+								},
+								{
+									"name": "$expand todos los hallazgos con filtro hipertension arterial",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/ValueSet/$expand?url=http://snomed.info/sct/449081005/version/20240331?fhir_vs=ecl/<<404684003&count=10&displayLanguage=es&filter=hipertension arterial",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"ValueSet",
+												"$expand"
+											],
+											"query": [
+												{
+													"key": "url",
+													"value": "http://snomed.info/sct/449081005/version/20240331?fhir_vs=ecl/<<404684003"
+												},
+												{
+													"key": "count",
+													"value": "10"
+												},
+												{
+													"key": "displayLanguage",
+													"value": "es"
+												},
+												{
+													"key": "filter",
+													"value": "hipertension arterial"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "HAPI FHIR 5.6.3-si REST Server (FHIR Server; FHIR 4.0.1/R4)"
+										},
+										{
+											"key": "X-Request-ID",
+											"value": "A0YTGozaPi3oEdYW"
+										},
+										{
+											"key": "Content-Location",
+											"value": "http://192.168.70.139:8080/fhir/ValueSet/f57001e2-8e78-4923-97ab-83b899afaa42"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/fhir+json;charset=UTF-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 25 Sep 2023 01:01:01 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"resourceType\": \"ValueSet\",\n    \"id\": \"f57001e2-8e78-4923-97ab-83b899afaa42\",\n    \"url\": \"http://snomed.info/sct/449081005/version/20230430?fhir_vs=ecl/<<404684003\",\n    \"status\": \"active\",\n    \"copyright\": \"This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (SNOMED International), and distributed by agreement between SNOMED International and HL7. Implementer use of SNOMED CT is not covered by this agreement.\",\n    \"expansion\": {\n        \"id\": \"cba53db5-58c4-4b3c-8ea3-7aaf8f153ee2\",\n        \"timestamp\": \"2023-09-25T01:01:01+00:00\",\n        \"total\": 585,\n        \"offset\": 0,\n        \"parameter\": [\n            {\n                \"name\": \"version\",\n                \"valueUri\": \"http://snomed.info/sct|http://snomed.info/sct/449081005/version/20230430\"\n            },\n            {\n                \"name\": \"displayLanguage\",\n                \"valueString\": \"es\"\n            }\n        ],\n        \"contains\": [\n            {\n                \"system\": \"http://snomed.info/sct\",\n                \"code\": \"73211009\",\n                \"display\": \"diabetes mellitus\"\n            },\n            {\n                \"system\": \"http://snomed.info/sct\",\n                \"code\": \"11530004\",\n                \"display\": \"diabetes mellitus lábil\"\n            },\n            {\n                \"system\": \"http://snomed.info/sct\",\n                \"code\": \"46635009\",\n                \"display\": \"diabetes mellitus tipo 1\"\n            },\n            {\n                \"system\": \"http://snomed.info/sct\",\n                \"code\": \"44054006\",\n                \"display\": \"diabetes mellitus tipo 2\"\n            },\n            {\n                \"system\": \"http://snomed.info/sct\",\n                \"code\": \"530558861000132104\",\n                \"display\": \"diabetes mellitus atípica\"\n            },\n            {\n                \"system\": \"http://snomed.info/sct\",\n                \"code\": \"49817004\",\n                \"display\": \"diabetes mellitus neonatal\"\n            },\n            {\n                \"system\": \"http://snomed.info/sct\",\n                \"code\": \"8801005\",\n                \"display\": \"diabetes mellitus secundaria\"\n            },\n            {\n                \"system\": \"http://snomed.info/sct\",\n                \"code\": \"783722008\",\n                \"display\": \"miopatía y diabetes mellitus\"\n            },\n            {\n                \"system\": \"http://snomed.info/sct\",\n                \"code\": \"5368009\",\n                \"display\": \"diabetes mellitus medicamentosa\"\n            },\n            {\n                \"system\": \"http://snomed.info/sct\",\n                \"code\": \"11687002\",\n                \"display\": \"diabetes mellitus gestacional\"\n            }\n        ]\n    }\n}"
+								},
+								{
+									"name": "$expand todos los hallazgos con filttro monoclonal",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/ValueSet/$expand?url=http://snomed.info/sct/449081005/version/20240331?fhir_vs=ecl/<<404684003&count=10&displayLanguage=en&filter=monoclonal",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"ValueSet",
+												"$expand"
+											],
+											"query": [
+												{
+													"key": "url",
+													"value": "http://snomed.info/sct/449081005/version/20240331?fhir_vs=ecl/<<404684003"
+												},
+												{
+													"key": "count",
+													"value": "10"
+												},
+												{
+													"key": "displayLanguage",
+													"value": "en"
+												},
+												{
+													"key": "filter",
+													"value": "monoclonal"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Mon, 25 Sep 2023 20:32:54 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/fhir+json;charset=UTF-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "HAPI FHIR 5.6.3-si REST Server (FHIR Server; FHIR 4.0.1/R4)"
+										},
+										{
+											"key": "X-Request-ID",
+											"value": "ce1mNNKVuDRZEw7p"
+										},
+										{
+											"key": "Content-Location",
+											"value": "http://192.168.70.139:9002/fhir/ValueSet/c97200cd-0eec-4bea-8b5e-e2424a14ccc0"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Server",
+											"value": "Apigee Router"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"resourceType\": \"ValueSet\",\n    \"id\": \"c97200cd-0eec-4bea-8b5e-e2424a14ccc0\",\n    \"url\": \"http://snomed.info/sct/449081005/version/20230430?fhir_vs=ecl/<<404684003\",\n    \"status\": \"active\",\n    \"copyright\": \"This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (SNOMED International), and distributed by agreement between SNOMED International and HL7. Implementer use of SNOMED CT is not covered by this agreement.\",\n    \"expansion\": {\n        \"id\": \"ec4c119a-9692-4e39-bf83-f681c4e00c3f\",\n        \"timestamp\": \"2023-09-25T20:29:46+00:00\",\n        \"total\": 44,\n        \"offset\": 0,\n        \"parameter\": [\n            {\n                \"name\": \"version\",\n                \"valueUri\": \"http://snomed.info/sct|http://snomed.info/sct/449081005/version/20230430\"\n            },\n            {\n                \"name\": \"displayLanguage\",\n                \"valueString\": \"es\"\n            }\n        ],\n        \"contains\": [\n            {\n                \"system\": \"http://snomed.info/sct\",\n                \"code\": \"109983007\",\n                \"display\": \"gammapatía monoclonal (clínica)\"\n            },\n            {\n                \"system\": \"http://snomed.info/sct\",\n                \"code\": \"414771005\",\n                \"display\": \"IgG monoclonal presente\"\n            },\n            {\n                \"system\": \"http://snomed.info/sct\",\n                \"code\": \"414772003\",\n                \"display\": \"IgM monoclonal presente\"\n            },\n            {\n                \"system\": \"http://snomed.info/sct\",\n                \"code\": \"414770006\",\n                \"display\": \"IgE monoclonal presente\"\n            },\n            {\n                \"system\": \"http://snomed.info/sct\",\n                \"code\": \"414768002\",\n                \"display\": \"inmunoglobulina A monoclonal presente\"\n            },\n            {\n                \"system\": \"http://snomed.info/sct\",\n                \"code\": \"414769005\",\n                \"display\": \"inmunoglobulina D monoclonal presente\"\n            },\n            {\n                \"system\": \"http://snomed.info/sct\",\n                \"code\": \"414763006\",\n                \"display\": \"banda monoclonal presente\"\n            },\n            {\n                \"system\": \"http://snomed.info/sct\",\n                \"code\": \"58648008\",\n                \"display\": \"gammapatía monoclonal benigna\"\n            },\n            {\n                \"system\": \"http://snomed.info/sct\",\n                \"code\": \"415520000\",\n                \"display\": \"banda sérica monoclonal presente\"\n            },\n            {\n                \"system\": \"http://snomed.info/sct\",\n                \"code\": \"38675009\",\n                \"display\": \"crioinmunoglobulinemia monoclonal\"\n            }\n        ]\n    }\n}"
+								}
+							]
+						}
+					],
+					"description": "The definition of a value set is used to create a simple collection of codes suitable for use for data entry or validation.",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "ConceptMap",
+					"item": [
+						{
+							"name": "Operaciones",
+							"item": [
+								{
+									"name": "translate cie 10",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{access_token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/ConceptMap/$translate?code=431855005&system=http://snomed.info/sct&targetsystem=http://hl7.org/fhir/sid/icd-10",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"ConceptMap",
+												"$translate"
+											],
+											"query": [
+												{
+													"key": "code",
+													"value": "431855005"
+												},
+												{
+													"key": "system",
+													"value": "http://snomed.info/sct"
+												},
+												{
+													"key": "targetsystem",
+													"value": "http://hl7.org/fhir/sid/icd-10"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "translate concepto snomed a cie 10 Enfermedad pulmonar intersticial, no especificada",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/ConceptMap/$translate?code=35037009&system=http://snomed.info/sct&targetsystem=http://hl7.org/fhir/sid/icd-10",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"ConceptMap",
+														"$translate"
+													],
+													"query": [
+														{
+															"key": "code",
+															"value": "35037009"
+														},
+														{
+															"key": "system",
+															"value": "http://snomed.info/sct"
+														},
+														{
+															"key": "targetsystem",
+															"value": "http://hl7.org/fhir/sid/icd-10"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "X-Powered-By",
+													"value": "HAPI FHIR 5.6.3-si REST Server (FHIR Server; FHIR 4.0.1/R4)"
+												},
+												{
+													"key": "X-Request-ID",
+													"value": "fVtM1i1ndnAHOMET"
+												},
+												{
+													"key": "Content-Encoding",
+													"value": "gzip"
+												},
+												{
+													"key": "X-Content-Type-Options",
+													"value": "nosniff"
+												},
+												{
+													"key": "X-XSS-Protection",
+													"value": "1; mode=block"
+												},
+												{
+													"key": "Cache-Control",
+													"value": "no-cache, no-store, max-age=0, must-revalidate"
+												},
+												{
+													"key": "Pragma",
+													"value": "no-cache"
+												},
+												{
+													"key": "Expires",
+													"value": "0"
+												},
+												{
+													"key": "X-Frame-Options",
+													"value": "DENY"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/fhir+json;charset=UTF-8"
+												},
+												{
+													"key": "Transfer-Encoding",
+													"value": "chunked"
+												},
+												{
+													"key": "Date",
+													"value": "Mon, 25 Sep 2023 01:02:48 GMT"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=60"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"resourceType\": \"Parameters\",\n    \"parameter\": [\n        {\n            \"name\": \"result\",\n            \"valueBoolean\": true\n        },\n        {\n            \"name\": \"message\",\n            \"valueString\": \"Please observe the following map advice. Group:1, Priority:1, Rule:TRUE, Advice:'ALWAYS J84.9', Map Category:'null'.\"\n        },\n        {\n            \"name\": \"match\",\n            \"part\": [\n                {\n                    \"name\": \"equivalence\",\n                    \"valueCode\": \"unmatched\"\n                },\n                {\n                    \"name\": \"concept\",\n                    \"valueCoding\": {\n                        \"system\": \"http://hl7.org/fhir/sid/icd-10\",\n                        \"code\": \"J84.9\"\n                    }\n                },\n                {\n                    \"name\": \"source\",\n                    \"valueString\": \"http://snomed.info/sct/900000000000207008/version/20230430?fhir_cm=447562003\"\n                }\n            ]\n        }\n    ]\n}"
+										}
+									]
+								},
+								{
+									"name": "translate Loinc",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{access_token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/ConceptMap/$translate?code=443979002&system=http://snomed.info/sct&targetsystem=http://loinc.org",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"ConceptMap",
+												"$translate"
+											],
+											"query": [
+												{
+													"key": "code",
+													"value": "443979002"
+												},
+												{
+													"key": "system",
+													"value": "http://snomed.info/sct"
+												},
+												{
+													"key": "targetsystem",
+													"value": "http://loinc.org"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "translate snomed a medDra dolor abdominal",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/ConceptMap/$translate?code=21522001&system=http://snomed.info/sct&targetsystem=http://hl7.org/fhir/sid/meddra",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"ConceptMap",
+														"$translate"
+													],
+													"query": [
+														{
+															"key": "code",
+															"value": "21522001"
+														},
+														{
+															"key": "system",
+															"value": "http://snomed.info/sct"
+														},
+														{
+															"key": "targetsystem",
+															"value": "http://hl7.org/fhir/sid/meddra"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "X-Powered-By",
+													"value": "HAPI FHIR 5.6.3-si REST Server (FHIR Server; FHIR 4.0.1/R4)"
+												},
+												{
+													"key": "X-Request-ID",
+													"value": "4AK9X1IzL0JIZF2J"
+												},
+												{
+													"key": "Content-Encoding",
+													"value": "gzip"
+												},
+												{
+													"key": "X-Content-Type-Options",
+													"value": "nosniff"
+												},
+												{
+													"key": "X-XSS-Protection",
+													"value": "1; mode=block"
+												},
+												{
+													"key": "Cache-Control",
+													"value": "no-cache, no-store, max-age=0, must-revalidate"
+												},
+												{
+													"key": "Pragma",
+													"value": "no-cache"
+												},
+												{
+													"key": "Expires",
+													"value": "0"
+												},
+												{
+													"key": "X-Frame-Options",
+													"value": "DENY"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/fhir+json;charset=UTF-8"
+												},
+												{
+													"key": "Transfer-Encoding",
+													"value": "chunked"
+												},
+												{
+													"key": "Date",
+													"value": "Mon, 25 Sep 2023 01:07:39 GMT"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=60"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"resourceType\": \"Parameters\",\n    \"parameter\": [\n        {\n            \"name\": \"result\",\n            \"valueBoolean\": true\n        },\n        {\n            \"name\": \"match\",\n            \"part\": [\n                {\n                    \"name\": \"concept\",\n                    \"valueCoding\": {\n                        \"system\": \"http://hl7.org/fhir/sid/meddra\",\n                        \"code\": \"10000081\"\n                    }\n                },\n                {\n                    \"name\": \"source\",\n                    \"valueString\": \"http://snomed.info/sct/900000000000207008/version/20230430?fhir_cm=816210007\"\n                }\n            ]\n        }\n    ]\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "Obtener una lista de los conceptmaps",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{access_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/ConceptMap/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"ConceptMap",
+										""
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Obtener una lista de los conceptmaps",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/ConceptMap/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"ConceptMap",
+												""
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "HAPI FHIR 5.6.3-si REST Server (FHIR Server; FHIR 4.0.1/R4)"
+										},
+										{
+											"key": "X-Request-ID",
+											"value": "lPsPChE0n8borlnp"
+										},
+										{
+											"key": "Last-Modified",
+											"value": "Mon, 25 Sep 2023 01:04:05 GMT"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/fhir+json;charset=UTF-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 25 Sep 2023 01:04:05 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"resourceType\": \"Bundle\",\n    \"id\": \"7e40bea4-c985-4fe4-8096-7be0c48b0a3c\",\n    \"meta\": {\n        \"lastUpdated\": \"2023-09-25T01:04:05.546+00:00\"\n    },\n    \"type\": \"searchset\",\n    \"total\": 10,\n    \"link\": [\n        {\n            \"relation\": \"self\",\n            \"url\": \"http://192.168.70.139:8080/fhir/ConceptMap/\"\n        }\n    ],\n    \"entry\": [\n        {\n            \"fullUrl\": \"http://192.168.70.139:8080/fhir/ConceptMap/snomed_implicit_map_900000000000527005\",\n            \"resource\": {\n                \"resourceType\": \"ConceptMap\",\n                \"id\": \"snomed_implicit_map_900000000000527005\",\n                \"text\": {\n                    \"status\": \"generated\",\n                    \"div\": \"<div xmlns=\\\"http://www.w3.org/1999/xhtml\\\">This SNOMED CT Implicit Concept Map from http://snomed.info/sct?fhir_vs to http://snomed.info/sct?fhir_vs is generated using Reference Set 900000000000527005.</div>\"\n                },\n                \"url\": \"http://snomed.info/sct?fhir_cm=900000000000527005\",\n                \"name\": \"SAME AS\",\n                \"sourceUri\": \"http://snomed.info/sct?fhir_vs\",\n                \"targetUri\": \"http://snomed.info/sct?fhir_vs\"\n            }\n        },\n        {\n            \"fullUrl\": \"http://192.168.70.139:8080/fhir/ConceptMap/snomed_implicit_map_446608001\",\n            \"resource\": {\n                \"resourceType\": \"ConceptMap\",\n                \"id\": \"snomed_implicit_map_446608001\",\n                \"text\": {\n                    \"status\": \"generated\",\n                    \"div\": \"<div xmlns=\\\"http://www.w3.org/1999/xhtml\\\">This SNOMED CT Implicit Concept Map from http://snomed.info/sct?fhir_vs to http://hl7.org/fhir/sid/icd-o?fhir_vs is generated using Reference Set 446608001.</div>\"\n                },\n                \"url\": \"http://snomed.info/sct?fhir_cm=446608001\",\n                \"name\": \"SNOMED CT to ICD-O simple map\",\n                \"sourceUri\": \"http://snomed.info/sct?fhir_vs\",\n                \"targetUri\": \"http://hl7.org/fhir/sid/icd-o?fhir_vs\"\n            }\n        },\n        {\n            \"fullUrl\": \"http://192.168.70.139:8080/fhir/ConceptMap/snomed_implicit_map_447562003\",\n            \"resource\": {\n                \"resourceType\": \"ConceptMap\",\n                \"id\": \"snomed_implicit_map_447562003\",\n                \"text\": {\n                    \"status\": \"generated\",\n                    \"div\": \"<div xmlns=\\\"http://www.w3.org/1999/xhtml\\\">This SNOMED CT Implicit Concept Map from http://snomed.info/sct?fhir_vs to http://hl7.org/fhir/sid/icd-10?fhir_vs is generated using Reference Set 447562003.</div>\"\n                },\n                \"url\": \"http://snomed.info/sct?fhir_cm=447562003\",\n                \"name\": \"SNOMED CT to ICD-10 extended map\",\n                \"sourceUri\": \"http://snomed.info/sct?fhir_vs\",\n                \"targetUri\": \"http://hl7.org/fhir/sid/icd-10?fhir_vs\"\n            }\n        },\n        {\n            \"fullUrl\": \"http://192.168.70.139:8080/fhir/ConceptMap/snomed_implicit_map_784008009\",\n            \"resource\": {\n                \"resourceType\": \"ConceptMap\",\n                \"id\": \"snomed_implicit_map_784008009\",\n                \"text\": {\n                    \"status\": \"generated\",\n                    \"div\": \"<div xmlns=\\\"http://www.w3.org/1999/xhtml\\\">This SNOMED CT Implicit Concept Map from http://snomed.info/sct?fhir_vs to http://hl7.org/fhir/sid/orphanet?fhir_vs is generated using Reference Set 784008009.</div>\"\n                },\n                \"url\": \"http://snomed.info/sct?fhir_cm=784008009\",\n                \"name\": \"SNOMED CT to Orphanet simple map\",\n                \"sourceUri\": \"http://snomed.info/sct?fhir_vs\",\n                \"targetUri\": \"http://hl7.org/fhir/sid/orphanet?fhir_vs\"\n            }\n        },\n        {\n            \"fullUrl\": \"http://192.168.70.139:8080/fhir/ConceptMap/snomed_implicit_map_900000000000530003\",\n            \"resource\": {\n                \"resourceType\": \"ConceptMap\",\n                \"id\": \"snomed_implicit_map_900000000000530003\",\n                \"text\": {\n                    \"status\": \"generated\",\n                    \"div\": \"<div xmlns=\\\"http://www.w3.org/1999/xhtml\\\">This SNOMED CT Implicit Concept Map from http://snomed.info/sct?fhir_vs to http://snomed.info/sct?fhir_vs is generated using Reference Set 900000000000530003.</div>\"\n                },\n                \"url\": \"http://snomed.info/sct?fhir_cm=900000000000530003\",\n                \"name\": \"ALTERNATIVE\",\n                \"sourceUri\": \"http://snomed.info/sct?fhir_vs\",\n                \"targetUri\": \"http://snomed.info/sct?fhir_vs\"\n            }\n        },\n        {\n            \"fullUrl\": \"http://192.168.70.139:8080/fhir/ConceptMap/snomed_implicit_map_900000000000497000\",\n            \"resource\": {\n                \"resourceType\": \"ConceptMap\",\n                \"id\": \"snomed_implicit_map_900000000000497000\",\n                \"text\": {\n                    \"status\": \"generated\",\n                    \"div\": \"<div xmlns=\\\"http://www.w3.org/1999/xhtml\\\">This SNOMED CT Implicit Concept Map from CTV-3?fhir_vs to http://snomed.info/sct?fhir_vs is generated using Reference Set 900000000000497000.</div>\"\n                },\n                \"url\": \"http://snomed.info/sct?fhir_cm=900000000000497000\",\n                \"name\": \"CTV3 to SNOMED CT simple map\",\n                \"sourceUri\": \"CTV-3?fhir_vs\",\n                \"targetUri\": \"http://snomed.info/sct?fhir_vs\"\n            }\n        },\n        {\n            \"fullUrl\": \"http://192.168.70.139:8080/fhir/ConceptMap/snomed_implicit_map_900000000000523009\",\n            \"resource\": {\n                \"resourceType\": \"ConceptMap\",\n                \"id\": \"snomed_implicit_map_900000000000523009\",\n                \"text\": {\n                    \"status\": \"generated\",\n                    \"div\": \"<div xmlns=\\\"http://www.w3.org/1999/xhtml\\\">This SNOMED CT Implicit Concept Map from http://snomed.info/sct?fhir_vs to http://snomed.info/sct?fhir_vs is generated using Reference Set 900000000000523009.</div>\"\n                },\n                \"url\": \"http://snomed.info/sct?fhir_cm=900000000000523009\",\n                \"name\": \"POSSIBLY EQUIVALENT TO\",\n                \"sourceUri\": \"http://snomed.info/sct?fhir_vs\",\n                \"targetUri\": \"http://snomed.info/sct?fhir_vs\"\n            }\n        },\n        {\n            \"fullUrl\": \"http://192.168.70.139:8080/fhir/ConceptMap/snomed_implicit_map_6011000124106\",\n            \"resource\": {\n                \"resourceType\": \"ConceptMap\",\n                \"id\": \"snomed_implicit_map_6011000124106\",\n                \"text\": {\n                    \"status\": \"generated\",\n                    \"div\": \"<div xmlns=\\\"http://www.w3.org/1999/xhtml\\\">This SNOMED CT Implicit Concept Map from http://snomed.info/sct?fhir_vs to http://hl7.org/fhir/sid/icd-10-cm?fhir_vs is generated using Reference Set 6011000124106.</div>\"\n                },\n                \"url\": \"http://snomed.info/sct?fhir_cm=6011000124106\",\n                \"name\": \"SNOMED CT to ICD-10-CM complex map\",\n                \"sourceUri\": \"http://snomed.info/sct?fhir_vs\",\n                \"targetUri\": \"http://hl7.org/fhir/sid/icd-10-cm?fhir_vs\"\n            }\n        },\n        {\n            \"fullUrl\": \"http://192.168.70.139:8080/fhir/ConceptMap/snomed_implicit_map_900000000000526001\",\n            \"resource\": {\n                \"resourceType\": \"ConceptMap\",\n                \"id\": \"snomed_implicit_map_900000000000526001\",\n                \"text\": {\n                    \"status\": \"generated\",\n                    \"div\": \"<div xmlns=\\\"http://www.w3.org/1999/xhtml\\\">This SNOMED CT Implicit Concept Map from http://snomed.info/sct?fhir_vs to http://snomed.info/sct?fhir_vs is generated using Reference Set 900000000000526001.</div>\"\n                },\n                \"url\": \"http://snomed.info/sct?fhir_cm=900000000000526001\",\n                \"name\": \"REPLACED BY\",\n                \"sourceUri\": \"http://snomed.info/sct?fhir_vs\",\n                \"targetUri\": \"http://snomed.info/sct?fhir_vs\"\n            }\n        },\n        {\n            \"fullUrl\": \"http://192.168.70.139:8080/fhir/ConceptMap/snomed_implicit_map_816210007\",\n            \"resource\": {\n                \"resourceType\": \"ConceptMap\",\n                \"id\": \"snomed_implicit_map_816210007\",\n                \"text\": {\n                    \"status\": \"generated\",\n                    \"div\": \"<div xmlns=\\\"http://www.w3.org/1999/xhtml\\\">This SNOMED CT Implicit Concept Map from http://snomed.info/sct?fhir_vs to http://hl7.org/fhir/sid/meddra?fhir_vs is generated using Reference Set 816210007.</div>\"\n                },\n                \"url\": \"http://snomed.info/sct?fhir_cm=816210007\",\n                \"name\": \"SNOMED CT to MedDra simple map\",\n                \"sourceUri\": \"http://snomed.info/sct?fhir_vs\",\n                \"targetUri\": \"http://hl7.org/fhir/sid/meddra?fhir_vs\"\n            }\n        }\n    ]\n}"
+								}
+							]
+						}
+					],
+					"description": "Translate a code from one value set to another, based on the existing value set and concept maps resources, and/or other additional knowledge available to the server",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Basic Snomed-CT",
+			"item": [
+				{
+					"name": "Concept by identifier",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://10.150.45.205:8080/browser/MAIN/concepts/21341004",
+							"protocol": "http",
+							"host": [
+								"10",
+								"150",
+								"45",
+								"205"
+							],
+							"port": "8080",
+							"path": [
+								"browser",
+								"MAIN",
+								"concepts",
+								"21341004"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Concepts by terms",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://10.150.45.205:8080/MAIN/concepts?term=asthma",
+							"protocol": "http",
+							"host": [
+								"10",
+								"150",
+								"45",
+								"205"
+							],
+							"port": "8080",
+							"path": [
+								"MAIN",
+								"concepts"
+							],
+							"query": [
+								{
+									"key": "term",
+									"value": "asthma"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "",
+			"type": "default"
+		}
+	]
+}
