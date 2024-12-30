@@ -59,4 +59,4 @@ En este ejemplo se muestra cómo entrar al archivo de configuración del host, c
 <img src="https://github.com/SIMSADIs/Servidor-Terminologico-SnowStorm/blob/setting-cloud/enter-droplet.gif" alt="Pegar ID" width="650" height="400">
 
 
-Finalmene en el terminal del droplet iniciado en Visual Studio Code se deben instalar los requerimientos para desplegar SnowStorm, se debe desplegar SnowStorm y se le deben cargar sus terminologías como se muestra en este repositorio.
+Finalmente, en el terminal del droplet iniciado en Visual Studio Code se deben instalar los requerimientos para desplegar SnowStorm, se debe desplegar SnowStorm y se le deben cargar sus terminologías como se muestra en este repositorio.
