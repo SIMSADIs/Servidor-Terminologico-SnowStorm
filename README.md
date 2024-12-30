@@ -1,5 +1,5 @@
 # Despliegue y configuración de un Servidor Terminológico SnowStorm para la interoperabilidad con Registros Clínicos Electrónicos
-Snowstorm es un servidor terminológico de código abierto desarrollado por la IHTSDO (International Health Terminology Standards Development Organisation) para gestionar y consultar terminologías clínicas internacionales. Proporciona una API RESTful para facilitar la integración y el acceso a los datos terminológicos en aplicaciones de salud
+Snowstorm es un servidor terminológico de código abierto desarrollado por la IHTSDO (International Health Terminology Standards Development Organisation) para gestionar y consultar terminologías clínicas internacionales. Proporciona una API REST para facilitar la integración y el acceso a los datos terminológicos en aplicaciones de salud
 
 El presente repositorio indica como desplegar SnowStorm de forma local y en la nube, cargarle terminologías locales e internacionales y crear una integración interoperable con Bahmni para ser utilizado en su registro clínico electrónico, mostrando así una de sus posibles usabilidades.
 
@@ -119,7 +119,7 @@ Para instalar Hapi-Fhir Tool se utiliza la documentación entregada en https://h
 
 1.- Descargar el archivo comprimido llamado hapi-fhir-[versión]-cli.zip desde https://github.com/hapifhir/hapi-fhir/releases .
 
-2.- Descomprime el archivo descargado, utiliza la terminal, ubicate en el directorio donde se encuentra el archivo e ingresa el siguiente comando, recuerda cambiar la versión a la que estés ocupando.
+2.- Descomprime el archivo descargado, utiliza la terminal, ubícate en el directorio donde se encuentra el archivo e ingresa el siguiente comando, recuerda cambiar la versión a la que estés ocupando.
 ```
 unzip hapi-fhir-7.4.2-cli.zip
 ```
