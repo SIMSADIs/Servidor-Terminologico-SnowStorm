@@ -1,6 +1,6 @@
 # SnowStorm en Bahmni
 
-SnowStorm es un servidor terminológico OpenSource capáz de validar y codificar terminos y conceptos clínicos en diversas aplicaciones de salud, una de ellas altamente utilizada en los diversos sístemas de salud son los registros clínicos eléctrónicos (EMR) en donde se registra diversidad de información de los pacientes. En este proyecto para demostrar la usabilidad de SnowStorm se integró con el HIS Bahmni, esta integración permite registrar la información de los pacientes de forma codificada y estandarizada asegurando así la calidad de la mismo.
+SnowStorm es un servidor terminológico OpenSource capáz de validar y codificar términos y conceptos clínicos en diversas aplicaciones de salud, una de ellas altamente utilizada en los diversos sistemas de salud son los registros clínicos electrónicos (EMR) en donde se registra diversidad de información de los pacientes. En este proyecto para demostrar la usabilidad de SnowStorm se integró con el HIS Bahmni, esta integración permite registrar la información de los pacientes de forma codificada y estandarizada asegurando así la calidad de la mismo.
 
 Para crear la integración de SnowStorm con Bahmni se debe seguir lo comentado a continuación
 
