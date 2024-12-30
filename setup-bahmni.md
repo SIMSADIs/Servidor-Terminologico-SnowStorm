@@ -46,6 +46,40 @@ docker compose up -d
 
 Para integrar SnowStorm con Bahmni se ajustan los parámetros como indica este [link](https://bahmni.atlassian.net/wiki/spaces/BAH/pages/3183345706/Bahmni-SNOMED+TS+Integration+Local+Installation+Guide+using+docker)
 
+En archivo .env se deben ajustar los siguientes parámetros considerando cambiar a tu IP:
+```
+COMPOSE_PROFILES = bahmni-lite, cdss
+TERMINOLOGY_SERVER_URL = http://IP:8080/fhir
+ICD10_LITE_INDICATOR = false
 
+```
+
+En archivo .envdev se deben ajustar los siguientes parámetros considerando cambiar a tu IP:
+```
+
+TERMINOLOGY_SERVER_URL = http://IP:8080/fhir
+ICD10_LITE_INDICATOR = false
+
+```
+
+Desde OpenMRS en el URL https://localhost/openmrs/ con el mismo usuario y contraseña especificado anteriormente se realizaron los siguientes ajustes. 
+
+En Administration -> Maintance -> Settings -> Cdss, se ajusta: 
+
+•	cdss.enable =  true
+•	cdss.fhir.baseurl = http://cdss:8080/cds-services 
+
+En Administration -> Maintance -> Settings -> Ts, se ajusta:
+
+•	fhir.baseurl = http://IP:8080/fhir
+•	Los demás campos se dejan en predeterminado
+
+En Administration -> Maintance -> Settings -> Bahmni, se ajusta:
+
+•	bahmni.lookupExternalTerminologyServer = true
+
+En Administration -> Maintance -> Settings -> Fhir, se ajusta:
+ 
+•	fhir.export.anonymise.config.path = /openmrs/data/fhir-export-anonymise-config.json
 
 
