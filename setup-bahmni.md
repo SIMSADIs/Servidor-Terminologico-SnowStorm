@@ -87,3 +87,4 @@ En Administration -> Maintance -> Settings -> Fhir, se ajusta:
 fhir.export.anonymise.config.path = /openmrs/data/fhir-export-anonymise-config.json
 ```
 
+Luego de realizar estos ajustes se recomienda realizar desde la terminal "docker compose up -d"
