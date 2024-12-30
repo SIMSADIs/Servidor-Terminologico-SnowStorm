@@ -72,7 +72,7 @@ cdss.fhir.baseurl = http://cdss:8080/cds-services
 En Administration -> Maintance -> Settings -> Ts, se ajusta:
 
 ```
-fhir.baseurl = http://IP:8080/fhir
+fhir.baseurl = http://IP:8080/fhir   //considera cambiar al IP del servidor a utilizar
 Los demás campos se dejan en predeterminado
 ```
 
